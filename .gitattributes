@@ -1,0 +1,5 @@
+# 二进制文件，避免 git 尝试文本合并
+*.zstd binary
+*.png binary
+*.docx binary
+*.zip binary
