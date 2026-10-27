@@ -1,0 +1,515 @@
+<mxfile host="app.diagrams.net" modified="2026-10-23T15:30:00.000Z" agent="dsh" version="24.7.17" type="device">
+  <diagram id="green-cert-flow" name="绿电绿证流程脑图">
+    <mxGraphModel dx="1500" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1420" pageHeight="3778" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cell7" value="绿电绿证业务全景
+（政策梳理至 2026-10-23）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#1F3864;fontColor=#FFFFFF;fontSize=18;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1789" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cell2" value="发改能源〔2023〕1044号
+绿证全覆盖｜唯一凭证
+核发范围扩大到全部可再生能源" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-29" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell3" value="国能发新能规〔2024〕67号
+《可再生能源绿色电力证书核发和交易规则》
+2024-08-26 印发" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="33" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell4" value="发改能源〔2025〕262号
+《关于促进绿证市场高质量发展的意见》
+2027/2030 目标" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="95" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell5" value="发改能源〔2025〕650号
+《关于有序推动绿电直连发展有关事项的通知》" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="157" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell6" value="发改能源规〔2025〕1656号
+《电力中长期市场基本规则》
+2026-03-01 施行｜绿电专章并入
+同时废止〔2024〕1123号绿电专章" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="219" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell7" value="① 政策依据（4+1 份核心文件）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#1F4E79;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="95" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell8" value="项目建档立卡
+国家可再生能源发电项目信息管理平台" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="281" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell9" value="绿证账户注册
+实名唯一账户
+（国家绿证核发交易系统）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="343" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell10" value="电量数据推送
+电网/交易机构每月22日前
+推送上月电量" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="405" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell11" value="数据核对
+电网/交易机构数据
+与发电企业申报数据核对" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="467" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell12" value="统一核发
+国家能源局资质中心
+按月统一核发" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="529" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell13" value="计量口径
+1 个绿证 = 1000 kWh
+不足 1 个结转次月" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="591" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell14" value="可交易绿证
+风电/光伏/生物质/地热/海洋能上网电量
+2023年起新投产市场化水电" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="653" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell15" value="暂不交易绿证
+自发自用电量
+2023年前存量常规水电" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#DEEBF7;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="715" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell16" value="② 绿证核发（按月）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#2E75B6;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="498" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell17" value="主体注册
+发电企业/售电公司/电力用户
+新型经营主体" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="777" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell18" value="代理关系
+售电公司—用户
+虚拟电厂—分布式项目" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="839" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell19" value="交易周期
+数年/年度/月度/月内
+月内按日连续开市" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="901" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell20" value="组织方式
+双边协商/挂牌/集中竞价/滚动撮合" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="963" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell21" value="价格构成
+电能量价格 + 绿电环境价值
+两者分别明确" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1025" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell22" value="交易范围
+省内/跨省跨区/跨电网经营区" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1087" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell23" value="交易校核
+出清校核（交易机构）
+电网安全校核（调度）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1149" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell24" value="合同
+电子合同
+绿电环境价值可追溯
+可转让（环境价值一并转让）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1211" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell25" value="结算
+按自然月；按日清分
+电能量与环境价值分开结算" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1273" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell26" value="环境价值电量
+min(合同电量,
+上网电量−机制电量, 用电量)" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1335" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell27" value="绿证划转
+随绿电交易
+划转至买方账户" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E2F0D9;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1397" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell28" value="③ 绿电交易（中长期框架）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#548235;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1087" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell29" value="交易平台
+中国绿证交易平台
+北京/广州电力交易中心" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF2CC;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1459" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell30" value="交易方式
+挂牌/双边协商/集中竞价" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF2CC;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1521" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell31" value="交易规则
+仅可交易一次
+最小 1 个，单位元/个" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF2CC;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1583" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell32" value="划转
+资质中心依交易信息
+实时划转" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF2CC;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1645" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell33" value="有效期
+2 年（自电量生产月起）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF2CC;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1707" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell34" value="核销
+超期或已声明消费
+→ 自动核销" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF2CC;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1769" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell35" value="④ 绿证单独交易" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#BF8F00;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1614" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell36" value="消费声明
+企业/个人声明绿电消费" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FBE5D6;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1831" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell37" value="核销凭证
+已声明→核销→消费证明" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FBE5D6;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1893" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell38" value="核算机制
+基于绿证的消费核算
+（262号）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FBE5D6;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1955" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell39" value="认证标识
+绿色电力消费认证/标识" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FBE5D6;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2017" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell40" value="应用场景
+ESG报告/碳足迹/CBAM/RE100" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FBE5D6;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2079" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell41" value="强制消费
+重点行业与数据中心
+比例要求逐步提高" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FBE5D6;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2141" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell42" value="⑤ 绿色电力消费认定" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#C55A11;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1986" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell43" value="消纳责任权重
+用绿证核算权重" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E9E2F3;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2203" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell44" value="能耗/碳排放双控
+绿电消费纳入节能降碳管理" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E9E2F3;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2265" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell45" value="碳市场/CCER
+深远海风电、光热CCER
+对应绿证核销" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E9E2F3;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2327" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell46" value="机制电价（136号）
+纳入机制的电量
+不重复获得绿证收益" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E9E2F3;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2389" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell47" value="绿电直连（650号）
+源网荷储/直连项目
+绿证归属与核发" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E9E2F3;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2451" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell48" value="国际互认
+推动中国绿证国际应用" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E9E2F3;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2513" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell49" value="⑥ 与其他机制衔接" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#7030A0;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="2358" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell50" value="每月22日前
+推送上月电量" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2575" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell51" value="当月完成上月核发
+（262号要求）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2637" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell52" value="绿证有效期 2 年" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2699" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell53" value="绿电结算
+按自然月、按日清分" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2761" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell54" value="绿证仅交易一次" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2823" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell55" value="1 绿证 = 1000 kWh" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2885" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell56" value="1656号 2026-03-01 施行" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#D9F2F2;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2947" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell57" value="⑦ 关键时限与口径" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#1F6E6E;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="2761" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell58" value="核发数据核对
+项目/电量/账户一致性" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8DDE1;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3009" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell59" value="交易申报支持
+代理关系绑定、绿电需求关联" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8DDE1;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3071" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell60" value="结算核对
+环境价值取小原则
+偏差补偿" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8DDE1;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3133" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell61" value="绿证划转/核销
+状态跟踪" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8DDE1;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3195" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell62" value="省级绿证账户
+代理购电存量水电划转" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8DDE1;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3257" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell63" value="异常场景
+数据迟延/重复申领/超期" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8DDE1;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3319" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell64" value="⑧ 系统落点（你的岗位）" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#B23A48;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="3164" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell65" value="重复申领其他同属性凭证
+（如 I-REC）→ 责令改正/约谈" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EDEDED;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3381" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell66" value="数据造假
+→ 约谈、移交追责" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EDEDED;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3443" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell67" value="绿证与 CCER 重复获益" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EDEDED;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3505" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell68" value="机制电价电量
+重复拿绿证收益" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EDEDED;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3567" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell69" value="交易后未声明消费
+→ 到期自动核销" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#EDEDED;fontColor=#1B2A41;fontSize=12;strokeColor=#A6A6A6;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3629" width="340" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="cell70" value="⑨ 合规风险清单" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#7F7F7F;fontColor=#FFFFFF;fontSize=14;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="3505" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell16" target="cell15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell28" target="cell27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell35" target="cell29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell35" target="cell30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell35" target="cell31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell35" target="cell32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell35" target="cell33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell35" target="cell34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell42" target="cell36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell42" target="cell37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell42" target="cell38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell42" target="cell39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell42" target="cell40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell42" target="cell41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell49" target="cell43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell49" target="cell44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell49" target="cell45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell49" target="cell46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell49" target="cell47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell49" target="cell48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell57" target="cell56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell64" target="cell58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell64" target="cell59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell64" target="cell60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell64" target="cell61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell64" target="cell62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell64" target="cell63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell70" target="cell65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell70" target="cell66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell70" target="cell67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell70" target="cell68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell70" target="cell69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9AA5B1;strokeWidth=1;" edge="1" parent="1" source="cell7" target="cell70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
