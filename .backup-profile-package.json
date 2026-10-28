@@ -1,0 +1,24 @@
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dependencies": {
+    "@vectorize-io/hindsight-coding-agents": "0.8.2",
+    "dsh-context": "0.77.0",
+    "dsh-ops": "0.4.1",
+    "dshmarket": "^1.70.2"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "@deepseek-ai/dsh-experimental-auto-review",
+        "dshmarket",
+        "dsh-context",
+        "@vectorize-io/hindsight-coding-agents",
+        "dsh-ops"
+      ]
+    }
+  }
+}

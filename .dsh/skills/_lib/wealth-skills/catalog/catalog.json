@@ -1,0 +1,4884 @@
+{
+  "$comment": "Source of truth for skill-pack coverage of the US Wealth Management Capability Catalog. Regenerate CATALOG_CROSSWALK.md and SKILL.md catalog blocks with `npm run catalog`.",
+  "sections": {
+    "T": "Executable skills, tools and commercial platforms",
+    "S": "Authoritative specifications and rules",
+    "G": "Open-source GitHub repositories",
+    "R": "Research and white papers"
+  },
+  "tiers": {
+    "engine": "A library function implements the core calculation or check for this item.",
+    "partial-engine": "A library function covers a stated part; the rest is guidance.",
+    "payload-builder": "Builds request payloads locally; nothing is connected or submitted.",
+    "guidance": "SKILL.md workflow guidance with no engine code.",
+    "standard-reference": "A specification or rule the pack cites; not implemented.",
+    "integration-reference": "An open-source project named as an optional integration.",
+    "research-reference": "A paper cited as methodology or evidence."
+  },
+  "items": [
+    {
+      "id": "T001",
+      "section": "T",
+      "name": "eMoney Advisor",
+      "url": "https://emoneyadvisor.com/",
+      "capability": "Cash-flow planning and household scenario reviews",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "runMonteCarloCashFlow"
+      ],
+      "note": "Retirement cash-flow Monte Carlo; no household scenario modelling."
+    },
+    {
+      "id": "T002",
+      "section": "T",
+      "name": "RightCapital",
+      "url": "https://www.rightcapital.com/",
+      "capability": "Retirement, tax and household planning",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTaxBracketHeadroom",
+        "calculateRMD",
+        "runMonteCarloCashFlow",
+        "calculateNetInvestmentIncomeTax"
+      ],
+      "note": "Bracket headroom, RMDs, NIIT and Monte Carlo; no integrated household plan."
+    },
+    {
+      "id": "T003",
+      "section": "T",
+      "name": "MoneyGuide",
+      "url": "https://www.moneyguidepro.com/",
+      "capability": "Goal-based financial planning",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "runMonteCarloCashFlow"
+      ],
+      "note": "Goal success probability by Monte Carlo only."
+    },
+    {
+      "id": "T004",
+      "section": "T",
+      "name": "Orion Planning",
+      "url": "https://orion.com/",
+      "capability": "Planning within an advisor platform",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Planning workflow guidance; no platform integration."
+    },
+    {
+      "id": "T005",
+      "section": "T",
+      "name": "Asset-Map",
+      "url": "https://www.asset-map.com/",
+      "capability": "Visual household financial discovery",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Discovery conversations are guidance only."
+    },
+    {
+      "id": "T006",
+      "section": "T",
+      "name": "Holistiplan",
+      "url": "https://www.holistiplan.com/",
+      "capability": "Tax-return analysis and planning opportunities",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTaxBracketHeadroom",
+        "calculateNetInvestmentIncomeTax",
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "Tax calculations from supplied figures; no tax-return parsing."
+    },
+    {
+      "id": "T007",
+      "section": "T",
+      "name": "Income Lab",
+      "url": "https://incomelaboratory.com/",
+      "capability": "Retirement-income planning and spending analysis",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "runMonteCarloCashFlow",
+        "calculateRMD"
+      ],
+      "note": "Withdrawal sustainability and RMDs; no income-floor or annuity modelling."
+    },
+    {
+      "id": "T008",
+      "section": "T",
+      "name": "Salesforce Financial Services Cloud",
+      "url": "https://www.salesforce.com/financial-services/",
+      "capability": "Financial-services relationship and workflow management",
+      "pack": "wealth-crm",
+      "tier": "payload-builder",
+      "engines": [
+        "buildCrmPayload"
+      ],
+      "note": "Generic CRM task payloads built locally and never sent."
+    },
+    {
+      "id": "T009",
+      "section": "T",
+      "name": "Wealthbox",
+      "url": "https://www.wealthbox.com/",
+      "capability": "Advisor CRM and task management",
+      "pack": "wealth-crm",
+      "tier": "payload-builder",
+      "engines": [
+        "buildCrmPayload"
+      ],
+      "note": "Generic CRM task payloads built locally and never sent."
+    },
+    {
+      "id": "T010",
+      "section": "T",
+      "name": "Practifi",
+      "url": "https://www.practifi.com/",
+      "capability": "Wealth-management CRM and operational processes",
+      "pack": "wealth-crm",
+      "tier": "payload-builder",
+      "engines": [
+        "buildCrmPayload"
+      ],
+      "note": "Generic CRM task payloads built locally and never sent."
+    },
+    {
+      "id": "T011",
+      "section": "T",
+      "name": "AdvisorEngine",
+      "url": "https://www.advisorengine.com/",
+      "capability": "Advisor CRM and portfolio platform",
+      "pack": "wealth-crm",
+      "tier": "payload-builder",
+      "engines": [
+        "buildCrmPayload"
+      ],
+      "note": "Generic CRM task payloads built locally and never sent."
+    },
+    {
+      "id": "T012",
+      "section": "T",
+      "name": "Advyzon",
+      "url": "https://www.advyzon.com/",
+      "capability": "CRM, reporting and investment-management workflows",
+      "pack": "wealth-crm",
+      "tier": "payload-builder",
+      "engines": [
+        "buildCrmPayload"
+      ],
+      "note": "Generic CRM task payloads built locally and never sent."
+    },
+    {
+      "id": "T013",
+      "section": "T",
+      "name": "Jump",
+      "url": "https://jumpapp.com/",
+      "capability": "Advisor meeting preparation and documentation",
+      "pack": "wealth-crm",
+      "tier": "partial-engine",
+      "engines": [
+        "parseMeetingTranscript"
+      ],
+      "note": "Keyword extraction from meeting transcripts; no meeting preparation."
+    },
+    {
+      "id": "T014",
+      "section": "T",
+      "name": "Zocks",
+      "url": "https://www.zocks.io/",
+      "capability": "Advisor meeting intelligence and CRM workflows",
+      "pack": "wealth-crm",
+      "tier": "partial-engine",
+      "engines": [
+        "parseMeetingTranscript"
+      ],
+      "note": "Keyword extraction from meeting transcripts; no CRM sync."
+    },
+    {
+      "id": "T015",
+      "section": "T",
+      "name": "Addepar",
+      "url": "https://addepar.com/",
+      "capability": "Investment data aggregation and portfolio reporting",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Performance from supplied valuations; no data aggregation."
+    },
+    {
+      "id": "T016",
+      "section": "T",
+      "name": "Orion Advisor Technology",
+      "url": "https://orion.com/",
+      "capability": "Portfolio accounting, reporting and advisor operations",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateCostBasis",
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Lot basis and time-weighted return; not a book of record."
+    },
+    {
+      "id": "T017",
+      "section": "T",
+      "name": "SS&C Black Diamond",
+      "url": "https://blackdiamond.advent.com/",
+      "capability": "Wealth portfolio reporting and client experience",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Performance calculation only; no reporting portal."
+    },
+    {
+      "id": "T018",
+      "section": "T",
+      "name": "SS&C Advent APX",
+      "url": "https://www.advent.com/solutions/advent-portfolio-exchange/",
+      "capability": "Portfolio accounting and investment reporting",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateCostBasis"
+      ],
+      "note": "Cost basis by lot; not portfolio accounting."
+    },
+    {
+      "id": "T019",
+      "section": "T",
+      "name": "SS&C Geneva",
+      "url": "https://www.advent.com/solutions/geneva/",
+      "capability": "Complex investment accounting",
+      "pack": "wealth-fund-ops",
+      "tier": "partial-engine",
+      "engines": [
+        "reconcileLedger",
+        "tieOutNav"
+      ],
+      "note": "Reconciliation and NAV checks; not a fund accounting system."
+    },
+    {
+      "id": "T020",
+      "section": "T",
+      "name": "Envestnet wealth platform",
+      "url": "https://www.envestnet.com/",
+      "capability": "Managed-account and advisor investment workflows",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "monitorPortfolioDrift",
+        "calculatePortfolioRebalance"
+      ],
+      "note": "Drift and rebalance trades; no managed-account platform."
+    },
+    {
+      "id": "T021",
+      "section": "T",
+      "name": "BNY Pershing Wove",
+      "url": "https://www.pershing.com/us/en/solutions/wove.html",
+      "capability": "Connected wealth-management workflows",
+      "pack": "wealth-portfolio",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Connected workflow guidance only."
+    },
+    {
+      "id": "T022",
+      "section": "T",
+      "name": "Morningstar Office",
+      "url": "https://www.morningstar.com/products/office",
+      "capability": "Advisor portfolio management and reporting",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "monitorPortfolioDrift",
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Drift monitoring and performance; no portfolio management platform."
+    },
+    {
+      "id": "T023",
+      "section": "T",
+      "name": "SEI Wealth Platform",
+      "url": "https://www.seic.com/wealth-management",
+      "capability": "Wealth processing and investment operations",
+      "pack": "wealth-fund-ops",
+      "tier": "partial-engine",
+      "engines": [
+        "reconcileLedger"
+      ],
+      "note": "Position reconciliation; no processing platform."
+    },
+    {
+      "id": "T024",
+      "section": "T",
+      "name": "InvestCloud",
+      "url": "https://investcloud.com/",
+      "capability": "Digital wealth experiences and investment workflows",
+      "pack": "wealth-portfolio",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Client digital experience is out of scope."
+    },
+    {
+      "id": "T025",
+      "section": "T",
+      "name": "MSCI BarraOne",
+      "url": "https://www.msci.com/our-solutions/analytics/barraone",
+      "capability": "Multi-asset portfolio risk analysis",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculatePortfolioVar"
+      ],
+      "note": "Parametric VaR and expected shortfall; no multi-factor risk model."
+    },
+    {
+      "id": "T026",
+      "section": "T",
+      "name": "MSCI Barra Portfolio Manager",
+      "url": "https://www.msci.com/our-solutions/analytics/barra-portfolio-manager",
+      "capability": "Portfolio construction and factor-risk analysis",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "analyzePortfolioFactors"
+      ],
+      "note": "Asset-class mix and averages of supplied factor scores; no factor model."
+    },
+    {
+      "id": "T027",
+      "section": "T",
+      "name": "SimCorp Axioma portfolio optimization",
+      "url": "https://www.simcorp.com/solutions/analytics",
+      "capability": "Constrained portfolio optimization and risk analytics",
+      "pack": "wealth-portfolio",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No optimizer; G001-G007 are open-source options."
+    },
+    {
+      "id": "T028",
+      "section": "T",
+      "name": "Bloomberg PORT",
+      "url": "https://www.bloomberg.com/professional/products/bloomberg-terminal/portfolio-management/",
+      "capability": "Portfolio performance, risk and attribution",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTimeWeightedReturn",
+        "calculatePortfolioVar",
+        "assessSharpeRatio"
+      ],
+      "note": "Return, risk and Sharpe reliability; no attribution."
+    },
+    {
+      "id": "T029",
+      "section": "T",
+      "name": "FactSet Portfolio Analytics",
+      "url": "https://www.factset.com/solutions/portfolio-analytics",
+      "capability": "Portfolio analytics and performance attribution",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Time-weighted return only; no attribution."
+    },
+    {
+      "id": "T030",
+      "section": "T",
+      "name": "Aladdin Wealth",
+      "url": "https://www.blackrock.com/aladdin/offerings/aladdin-wealth",
+      "capability": "Wealth portfolio risk and advisor analytics",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculatePortfolioVar",
+        "forwardTestSimulation"
+      ],
+      "note": "Parametric risk and regime simulation."
+    },
+    {
+      "id": "T031",
+      "section": "T",
+      "name": "Nitrogen",
+      "url": "https://nitrogenwealth.com/",
+      "capability": "Risk alignment and proposal analytics",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "checkSuitability",
+        "backtestPortfolio",
+        "forwardTestSimulation"
+      ],
+      "note": "Risk-tolerance fit and proposal backtests; no risk questionnaire scoring."
+    },
+    {
+      "id": "T032",
+      "section": "T",
+      "name": "55ip",
+      "url": "https://www.55-ip.com/",
+      "capability": "Tax-aware investment management and transitions",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "scanTaxLossHarvesting",
+        "calculateCostBasis"
+      ],
+      "note": "Lot-level tax awareness for transitions; no tax-aware optimizer."
+    },
+    {
+      "id": "T033",
+      "section": "T",
+      "name": "Kwanti",
+      "url": "https://kwanti.com/",
+      "capability": "Portfolio comparison and investment analytics",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "backtestPortfolio",
+        "assessSharpeRatio"
+      ],
+      "note": "Backtest comparison over four ETFs; no fund database."
+    },
+    {
+      "id": "T034",
+      "section": "T",
+      "name": "Morningstar Direct",
+      "url": "https://www.morningstar.com/products/direct",
+      "capability": "Fund research and investment analysis",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No fund research database."
+    },
+    {
+      "id": "T035",
+      "section": "T",
+      "name": "Bloomberg Terminal",
+      "url": "https://www.bloomberg.com/professional/products/bloomberg-terminal/",
+      "capability": "Market data and investment research",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No market data terminal."
+    },
+    {
+      "id": "T036",
+      "section": "T",
+      "name": "LSEG Workspace",
+      "url": "https://www.lseg.com/en/data-analytics/products/workspace",
+      "capability": "Market intelligence and research desktop",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No research desktop."
+    },
+    {
+      "id": "T037",
+      "section": "T",
+      "name": "FactSet Workstation",
+      "url": "https://www.factset.com/",
+      "capability": "Securities research and financial analytics",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "generateCompanyTearSheet"
+      ],
+      "note": "Valuation ratios from supplied fundamentals."
+    },
+    {
+      "id": "T038",
+      "section": "T",
+      "name": "AlphaSense",
+      "url": "https://www.alpha-sense.com/",
+      "capability": "Search and synthesis across investment documents",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "parseEdgarFilingSummary"
+      ],
+      "note": "Keyword summary of supplied filing text; no document search."
+    },
+    {
+      "id": "T039",
+      "section": "T",
+      "name": "Koyfin",
+      "url": "https://www.koyfin.com/",
+      "capability": "Market dashboards and investment research",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No market dashboards."
+    },
+    {
+      "id": "T040",
+      "section": "T",
+      "name": "iCapital",
+      "url": "https://icapital.com/",
+      "capability": "Alternative-investment access and servicing",
+      "pack": "wealth-uhnw",
+      "tier": "partial-engine",
+      "engines": [
+        "calculatePeMetrics",
+        "calculateMoneyWeightedReturn"
+      ],
+      "note": "Private fund multiples and IRR; no alternatives marketplace or servicing."
+    },
+    {
+      "id": "T041",
+      "section": "T",
+      "name": "CAIS",
+      "url": "https://www.caisgroup.com/",
+      "capability": "Alternative-investment access and advisor workflows",
+      "pack": "wealth-uhnw",
+      "tier": "partial-engine",
+      "engines": [
+        "calculatePeMetrics",
+        "calculateMoneyWeightedReturn"
+      ],
+      "note": "Private fund multiples and IRR; no alternatives marketplace or servicing."
+    },
+    {
+      "id": "T042",
+      "section": "T",
+      "name": "Schwab Advisor Services",
+      "url": "https://advisorservices.schwab.com/",
+      "capability": "RIA custody and account servicing",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildFixOrderPayload",
+        "validatePreTradeCompliance",
+        "calculateSettlementDate"
+      ],
+      "note": "FIX orders, pre-trade checks and settlement dates; no custodian connection."
+    },
+    {
+      "id": "T043",
+      "section": "T",
+      "name": "Fidelity Wealthscape",
+      "url": "https://wealthscape.com/",
+      "capability": "Custody and brokerage operations platform",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateSettlementDate",
+        "validateSecurityIdentifier"
+      ],
+      "note": "Settlement dates and identifier checks; no operations platform."
+    },
+    {
+      "id": "T044",
+      "section": "T",
+      "name": "BNY Pershing NetX360",
+      "url": "https://www.pershing.com/",
+      "capability": "Custody, trading and servicing desktop",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildFixOrderPayload"
+      ],
+      "note": "FIX order messages built locally."
+    },
+    {
+      "id": "T045",
+      "section": "T",
+      "name": "Altruist",
+      "url": "https://altruist.com/",
+      "capability": "RIA custody and portfolio workflows",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "validatePreTradeCompliance",
+        "calculateSettlementDate"
+      ],
+      "note": "Pre-trade checks and settlement dates; no custody."
+    },
+    {
+      "id": "T046",
+      "section": "T",
+      "name": "Apex Clearing APIs",
+      "url": "https://developer.apexclearing.com/",
+      "capability": "Brokerage and custody integration",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildTradePayload"
+      ],
+      "note": "REST order payloads built locally and never submitted."
+    },
+    {
+      "id": "T047",
+      "section": "T",
+      "name": "Alpaca Trading API",
+      "url": "https://docs.alpaca.markets/",
+      "capability": "Programmatic trading and paper trading",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildTradePayload"
+      ],
+      "note": "Alpaca order JSON built locally and never submitted."
+    },
+    {
+      "id": "T048",
+      "section": "T",
+      "name": "Alpaca Broker API",
+      "url": "https://docs.alpaca.markets/docs/brokerapi",
+      "capability": "Brokerage application and account workflows",
+      "pack": "wealth-execution",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No brokerage account workflows."
+    },
+    {
+      "id": "T049",
+      "section": "T",
+      "name": "Interactive Brokers APIs",
+      "url": "https://www.interactivebrokers.com/campus/ibkr-api-page/",
+      "capability": "Trading, account data and reporting interfaces",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildTradePayload"
+      ],
+      "note": "IBKR order JSON with a caller-supplied conid, never submitted."
+    },
+    {
+      "id": "T050",
+      "section": "T",
+      "name": "Tradier API",
+      "url": "https://docs.tradier.com/",
+      "capability": "Brokerage and market-data API",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildTradePayload"
+      ],
+      "note": "Order payloads built locally; no market data or submission."
+    },
+    {
+      "id": "T051",
+      "section": "T",
+      "name": "TradeStation API",
+      "url": "https://api.tradestation.com/docs/",
+      "capability": "Trading and brokerage data API",
+      "pack": "wealth-execution",
+      "tier": "payload-builder",
+      "engines": [
+        "buildTradePayload"
+      ],
+      "note": "Order payloads built locally; no market data or submission."
+    },
+    {
+      "id": "T052",
+      "section": "T",
+      "name": "Alpaca Market Data API",
+      "url": "https://docs.alpaca.markets/docs/about-market-data-api",
+      "capability": "Market prices and historical data",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No price feed."
+    },
+    {
+      "id": "T053",
+      "section": "T",
+      "name": "Databento",
+      "url": "https://databento.com/docs",
+      "capability": "Historical and live market-data delivery",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No market data delivery."
+    },
+    {
+      "id": "T054",
+      "section": "T",
+      "name": "Nasdaq Data Link",
+      "url": "https://data.nasdaq.com/",
+      "capability": "Financial and alternative datasets",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No alternative datasets."
+    },
+    {
+      "id": "T055",
+      "section": "T",
+      "name": "Alpha Vantage",
+      "url": "https://www.alphavantage.co/documentation/",
+      "capability": "Time series and financial data",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "fetchLiveFredSeries"
+      ],
+      "note": "Latest FRED observation only; no full time series."
+    },
+    {
+      "id": "T056",
+      "section": "T",
+      "name": "Financial Modeling Prep",
+      "url": "https://site.financialmodelingprep.com/developer/docs",
+      "capability": "Financial statements and market-data endpoints",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "extractCompanyFact"
+      ],
+      "note": "XBRL facts from SEC companyfacts; no market data endpoints."
+    },
+    {
+      "id": "T057",
+      "section": "T",
+      "name": "Financial Datasets API",
+      "url": "https://www.financialdatasets.ai/",
+      "capability": "Financial fundamentals and market data",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "generateCompanyTearSheet"
+      ],
+      "note": "Valuation ratios from supplied fundamentals."
+    },
+    {
+      "id": "T058",
+      "section": "T",
+      "name": "Tiingo",
+      "url": "https://www.tiingo.com/documentation/general/overview",
+      "capability": "Price and financial data APIs",
+      "pack": "wealth-research",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No price or financial data API."
+    },
+    {
+      "id": "T059",
+      "section": "T",
+      "name": "Intrinio",
+      "url": "https://docs.intrinio.com/",
+      "capability": "Financial statements and securities data",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "extractCompanyFact",
+        "validateSecurityIdentifier"
+      ],
+      "note": "SEC XBRL facts and identifier checks; no securities master."
+    },
+    {
+      "id": "T060",
+      "section": "T",
+      "name": "FRED API",
+      "url": "https://fred.stlouisfed.org/docs/api/fred/",
+      "capability": "Macroeconomic time series",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "fetchLiveFredSeries"
+      ],
+      "note": "Latest observation of a FRED macro series."
+    },
+    {
+      "id": "T061",
+      "section": "T",
+      "name": "SEC EDGAR APIs",
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "capability": "Issuer submissions and structured company facts",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "fetchLiveEdgarCompanyFacts",
+        "extractCompanyFact"
+      ],
+      "note": "Live company facts and XBRL value extraction; the submissions API is not used."
+    },
+    {
+      "id": "T062",
+      "section": "T",
+      "name": "Plaid Investments",
+      "url": "https://plaid.com/docs/investments/",
+      "capability": "Investment holdings and transaction aggregation",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Account aggregation is not implemented."
+    },
+    {
+      "id": "T063",
+      "section": "T",
+      "name": "Envestnet Yodlee",
+      "url": "https://developer.yodlee.com/",
+      "capability": "Financial-account aggregation",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Account aggregation is not implemented."
+    },
+    {
+      "id": "T064",
+      "section": "T",
+      "name": "MX Platform API",
+      "url": "https://docs.mx.com/",
+      "capability": "Account aggregation and financial data",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Account aggregation is not implemented."
+    },
+    {
+      "id": "T065",
+      "section": "T",
+      "name": "Mastercard Open Finance US",
+      "url": "https://www.mastercard.com/us/en/business/open-finance.html",
+      "capability": "Permissioned financial-data connectivity",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Account aggregation is not implemented."
+    },
+    {
+      "id": "T066",
+      "section": "T",
+      "name": "SnapTrade",
+      "url": "https://docs.snaptrade.com/",
+      "capability": "Brokerage-account connectivity",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Account aggregation is not implemented."
+    },
+    {
+      "id": "T067",
+      "section": "T",
+      "name": "Docusign eSignature API",
+      "url": "https://developers.docusign.com/docs/esign-rest-api/",
+      "capability": "Account and servicing document signatures",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "relatedEngines": [
+        "identifyOnboardingGaps"
+      ],
+      "note": "E-signature is not implemented; onboarding gaps lists what still needs collecting."
+    },
+    {
+      "id": "T068",
+      "section": "T",
+      "name": "Alloy",
+      "url": "https://www.alloy.com/",
+      "capability": "Identity decisioning and onboarding checks",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "validateCipIdentity",
+        "identifyOnboardingGaps"
+      ],
+      "note": "CIP field checks and gap identification; no identity decisioning."
+    },
+    {
+      "id": "T069",
+      "section": "T",
+      "name": "Socure",
+      "url": "https://www.socure.com/",
+      "capability": "Identity verification and fraud detection",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "validateCipIdentity"
+      ],
+      "note": "CIP field checks; no document or fraud verification."
+    },
+    {
+      "id": "T070",
+      "section": "T",
+      "name": "Trulioo",
+      "url": "https://www.trulioo.com/",
+      "capability": "Identity and business verification",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "validateCipIdentity",
+        "identifyOnboardingGaps"
+      ],
+      "note": "Individual and entity record checks; no verification."
+    },
+    {
+      "id": "T071",
+      "section": "T",
+      "name": "DTCC CTM",
+      "url": "https://www.dtcc.com/institutional-trade-processing/itp/ctm",
+      "capability": "Institutional trade matching",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateSettlementDate"
+      ],
+      "note": "Settlement dates only; no trade matching."
+    },
+    {
+      "id": "T072",
+      "section": "T",
+      "name": "Smarsh",
+      "url": "https://www.smarsh.com/",
+      "capability": "Communication retention and supervision",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "scanFinraRule2210"
+      ],
+      "note": "Pattern screen of communications; no archiving or retention."
+    },
+    {
+      "id": "T073",
+      "section": "T",
+      "name": "Global Relay",
+      "url": "https://www.globalrelay.com/",
+      "capability": "Communications archiving and surveillance",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "scanFinraRule2210"
+      ],
+      "note": "Pattern screen of communications; no archiving or retention."
+    },
+    {
+      "id": "T074",
+      "section": "T",
+      "name": "Behavox",
+      "url": "https://www.behavox.com/",
+      "capability": "Communication surveillance and conduct risk",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "scanFinraRule2210"
+      ],
+      "note": "Keyword screen; no behavioral surveillance."
+    },
+    {
+      "id": "T075",
+      "section": "T",
+      "name": "NICE Actimize",
+      "url": "https://www.niceactimize.com/",
+      "capability": "Financial-crime and compliance analytics",
+      "pack": "wealth-compliance",
+      "tier": "guidance",
+      "engines": [],
+      "note": "No financial-crime analytics."
+    },
+    {
+      "id": "T076",
+      "section": "T",
+      "name": "Nasdaq SMARTS",
+      "url": "https://www.nasdaq.com/solutions/fintech/nasdaq-trade-surveillance",
+      "capability": "Trade surveillance",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "checkSuitability"
+      ],
+      "note": "Turnover and cost-equity indicators against firm limits; no market-abuse surveillance."
+    },
+    {
+      "id": "T077",
+      "section": "T",
+      "name": "ACA ComplianceAlpha",
+      "url": "https://www.acaglobal.com/compliancealpha",
+      "capability": "Compliance workflows and oversight",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "scanFinraRule2210",
+        "checkSuitability",
+        "checkPerformanceAdvertisement"
+      ],
+      "note": "Communication, suitability and performance-advertising checks; no workflow platform."
+    },
+    {
+      "id": "T078",
+      "section": "T",
+      "name": "Comply",
+      "url": "https://www.comply.com/",
+      "capability": "Regulatory compliance and employee monitoring",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "scanFinraRule2210",
+        "checkPerformanceAdvertisement"
+      ],
+      "note": "Communication and advertising checks; no employee monitoring."
+    },
+    {
+      "id": "T079",
+      "section": "T",
+      "name": "ComplyAdvantage",
+      "url": "https://complyadvantage.com/",
+      "capability": "AML screening and financial-crime intelligence",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "validateCipIdentity"
+      ],
+      "note": "Records an OFAC result from a real screen; performs no screening."
+    },
+    {
+      "id": "T080",
+      "section": "T",
+      "name": "FINRA BrokerCheck",
+      "url": "https://brokercheck.finra.org/",
+      "capability": "Broker and firm registration research",
+      "pack": "wealth-compliance",
+      "tier": "guidance",
+      "note": "Manual check only: FINRA terms of use prohibit automated access and use with AI tools. The IAPD lookup covers the adviser side of dual registrants; broker-dealer registration still needs BrokerCheck.",
+      "relatedEngines": [
+        "lookupAdviserRegistration"
+      ]
+    },
+    {
+      "id": "T081",
+      "section": "T",
+      "name": "SEC IAPD",
+      "url": "https://adviserinfo.sec.gov/",
+      "capability": "Investment-adviser registration and disclosure research",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "lookupAdviserRegistration",
+        "parseIapdFirmRecord",
+        "parseIapdIndividualRecord"
+      ],
+      "note": "Registration status, notice filings, state registrations, employers, exams and disclosure flags from the SEC IAPD compilation files the operator downloads. Disclosure details and Form ADV brochures stay on the IAPD site."
+    },
+    {
+      "id": "T082",
+      "section": "T",
+      "name": "FP Alpha",
+      "url": "https://fpalpha.com/",
+      "capability": "Tax, estate and insurance planning analysis",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTaxBracketHeadroom",
+        "calculateNetInvestmentIncomeTax",
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "Tax calculations; no estate or insurance analysis."
+    },
+    {
+      "id": "T083",
+      "section": "T",
+      "name": "Vanilla",
+      "url": "https://www.justvanilla.com/",
+      "capability": "Estate planning and document visualization",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Estate planning is guidance only."
+    },
+    {
+      "id": "T084",
+      "section": "T",
+      "name": "Wealth.com",
+      "url": "https://www.wealth.com/",
+      "capability": "Estate-planning workflows",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Estate planning is guidance only."
+    },
+    {
+      "id": "T085",
+      "section": "T",
+      "name": "Trust & Will",
+      "url": "https://trustandwill.com/",
+      "capability": "Estate-document creation and planning",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Estate planning is guidance only."
+    },
+    {
+      "id": "T086",
+      "section": "T",
+      "name": "MaxMyInterest",
+      "url": "https://www.maxmyinterest.com/",
+      "capability": "Cash management and deposit allocation",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Cash management is guidance only."
+    },
+    {
+      "id": "T087",
+      "section": "T",
+      "name": "Pontera",
+      "url": "https://www.pontera.com/",
+      "capability": "Advisor management of held-away retirement accounts",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "monitorPortfolioDrift"
+      ],
+      "note": "Drift on supplied held-away allocations; no account access."
+    },
+    {
+      "id": "T088",
+      "section": "T",
+      "name": "Morningstar ByAllAccounts",
+      "url": "https://www.morningstar.com/products/byallaccounts",
+      "capability": "Investment-account data aggregation",
+      "pack": "wealth-onboarding",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Account aggregation is not implemented."
+    },
+    {
+      "id": "T089",
+      "section": "T",
+      "name": "Monarch Money",
+      "url": "https://www.monarchmoney.com/",
+      "capability": "Household net worth and cash-flow tracking",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Net worth tracking is not implemented."
+    },
+    {
+      "id": "T090",
+      "section": "T",
+      "name": "YNAB",
+      "url": "https://www.ynab.com/",
+      "capability": "Household budgeting and spending planning",
+      "pack": "wealth-planning",
+      "tier": "guidance",
+      "engines": [],
+      "note": "Budgeting is guidance only."
+    },
+    {
+      "id": "T091",
+      "section": "T",
+      "name": "Anthropic Meeting Prep Agent",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/meeting-prep-agent",
+      "capability": "Client-meeting briefing drafts",
+      "pack": "wealth-crm",
+      "tier": "partial-engine",
+      "engines": [
+        "parseMeetingTranscript"
+      ],
+      "note": "Transcript extraction; no briefing drafts."
+    },
+    {
+      "id": "T092",
+      "section": "T",
+      "name": "Anthropic Market Researcher",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/market-researcher",
+      "capability": "Sector and peer research",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "generateCompanyTearSheet",
+        "buildDcfValuation"
+      ],
+      "note": "Ratios and DCF from supplied data; no peer data."
+    },
+    {
+      "id": "T093",
+      "section": "T",
+      "name": "Anthropic Earnings Reviewer",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/earnings-reviewer",
+      "capability": "Earnings and model-update drafts",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "extractCompanyFact",
+        "generateCompanyTearSheet"
+      ],
+      "note": "Reported XBRL figures and ratios; no model updates."
+    },
+    {
+      "id": "T094",
+      "section": "T",
+      "name": "Anthropic Model Builder",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/model-builder",
+      "capability": "Financial model preparation",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "buildDcfValuation"
+      ],
+      "note": "DCF valuation with sensitivities; no three-statement model."
+    },
+    {
+      "id": "T095",
+      "section": "T",
+      "name": "Anthropic Valuation Reviewer",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/valuation-reviewer",
+      "capability": "Private-fund valuation review drafts",
+      "pack": "wealth-fund-ops",
+      "tier": "partial-engine",
+      "engines": [
+        "tieOutNav"
+      ],
+      "note": "NAV tie-out with level 3 and stale-price flags; no valuation methodology review."
+    },
+    {
+      "id": "T096",
+      "section": "T",
+      "name": "Anthropic GL Reconciler",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/gl-reconciler",
+      "capability": "Ledger-break investigation",
+      "pack": "wealth-fund-ops",
+      "tier": "engine",
+      "engines": [
+        "reconcileLedger"
+      ],
+      "note": "Ledger-break investigation: quantity, value and missing-position breaks."
+    },
+    {
+      "id": "T097",
+      "section": "T",
+      "name": "Anthropic Month-End Closer",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/month-end-closer",
+      "capability": "Close-workflow draft preparation",
+      "pack": "wealth-fund-ops",
+      "tier": "partial-engine",
+      "engines": [
+        "trackCloseChecklist"
+      ],
+      "note": "Close progress, overdue tasks and dependency readiness; no journal drafting."
+    },
+    {
+      "id": "T098",
+      "section": "T",
+      "name": "Anthropic Statement Auditor",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/statement-auditor",
+      "capability": "LP-statement checking",
+      "pack": "wealth-fund-ops",
+      "tier": "engine",
+      "engines": [
+        "checkLpCapitalStatement"
+      ],
+      "note": "LP statement roll-forward, commitment and fee checks."
+    },
+    {
+      "id": "T099",
+      "section": "T",
+      "name": "Anthropic KYC Screener",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/agent-plugins/kyc-screener",
+      "capability": "Onboarding gap identification",
+      "pack": "wealth-onboarding",
+      "tier": "engine",
+      "engines": [
+        "identifyOnboardingGaps"
+      ],
+      "note": "Onboarding gap identification across CIP, CDD and FINRA account records."
+    },
+    {
+      "id": "T100",
+      "section": "T",
+      "name": "Anthropic wealth-management plugin",
+      "url": "https://github.com/anthropics/financial-services/tree/main/plugins/vertical-plugins/wealth-management",
+      "capability": "Wealth-workflow skills",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTaxBracketHeadroom",
+        "monitorPortfolioDrift",
+        "scanTaxLossHarvesting"
+      ],
+      "note": "Overlapping wealth workflows, spread across packs."
+    },
+    {
+      "id": "S001",
+      "section": "S",
+      "name": "FIX Trading Community standards",
+      "url": "https://www.fixtrading.org/standards/",
+      "capability": "Trade-message semantics and session specifications",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "buildFixOrderPayload",
+        "parseFixMessage"
+      ],
+      "note": "FIX 4.4 New Order Single only; no session layer."
+    },
+    {
+      "id": "S002",
+      "section": "S",
+      "name": "FIXML",
+      "url": "https://www.fixtrading.org/standards/fixml/",
+      "capability": "XML representation of FIX business messages",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S003",
+      "section": "S",
+      "name": "FAST",
+      "url": "https://www.fixtrading.org/standards/fast/",
+      "capability": "Market-data message compression specification",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S004",
+      "section": "S",
+      "name": "Simple Binary Encoding",
+      "url": "https://www.fixtrading.org/standards/sbe-online/",
+      "capability": "Binary encoding for financial messages",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S005",
+      "section": "S",
+      "name": "FIX Performance Session Layer",
+      "url": "https://www.fixtrading.org/standards/fixp/",
+      "capability": "High-performance FIX session protocol",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S006",
+      "section": "S",
+      "name": "FpML",
+      "url": "https://www.fpml.org/spec/",
+      "capability": "Derivatives product and lifecycle XML specifications",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S007",
+      "section": "S",
+      "name": "FINOS Common Domain Model specification",
+      "url": "https://cdm.finos.org/",
+      "capability": "Common product, trade and lifecycle model",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S008",
+      "section": "S",
+      "name": "FDC3 specification",
+      "url": "https://fdc3.finos.org/docs/fdc3-intro",
+      "capability": "Desktop context and intent interoperability",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Messaging and interoperability standard; not implemented."
+    },
+    {
+      "id": "S009",
+      "section": "S",
+      "name": "Financial Data Exchange API",
+      "url": "https://financialdataexchange.org/",
+      "capability": "Permissioned financial-data exchange standard",
+      "pack": "wealth-onboarding",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Financial-data exchange standard; account aggregation is not implemented."
+    },
+    {
+      "id": "S010",
+      "section": "S",
+      "name": "Open Financial Exchange",
+      "url": "https://www.ofx.net/",
+      "capability": "Consumer and business financial-data exchange",
+      "pack": "wealth-onboarding",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Financial-data exchange standard; account aggregation is not implemented."
+    },
+    {
+      "id": "S011",
+      "section": "S",
+      "name": "ISO 20022",
+      "url": "https://www.iso20022.org/",
+      "capability": "Financial business-message models and schemas",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Securities messaging standard; not implemented."
+    },
+    {
+      "id": "S012",
+      "section": "S",
+      "name": "ISO 15022",
+      "url": "https://www.iso15022.org/",
+      "capability": "Securities messaging dictionary",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Securities messaging standard; not implemented."
+    },
+    {
+      "id": "S013",
+      "section": "S",
+      "name": "ISIN / ISO 6166",
+      "url": "https://www.anna-web.org/standards/isin-iso-6166/",
+      "capability": "International securities identification",
+      "pack": "wealth-execution",
+      "tier": "engine",
+      "engines": [
+        "validateSecurityIdentifier"
+      ],
+      "note": "ISIN format and check-digit validation."
+    },
+    {
+      "id": "S014",
+      "section": "S",
+      "name": "CFI / ISO 10962",
+      "url": "https://www.anna-web.org/standards/cfi-iso-10962/",
+      "capability": "Classification of financial instruments",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "validateSecurityIdentifier"
+      ],
+      "note": "CFI format and category only; attribute letters are not validated."
+    },
+    {
+      "id": "S015",
+      "section": "S",
+      "name": "MIC / ISO 10383",
+      "url": "https://www.iso20022.org/market-identifier-codes",
+      "capability": "Market and venue identification",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "validateSecurityIdentifier"
+      ],
+      "note": "MIC format only; no registry lookup."
+    },
+    {
+      "id": "S016",
+      "section": "S",
+      "name": "LEI Common Data File formats",
+      "url": "https://www.gleif.org/en/about-lei/common-data-file-format",
+      "capability": "Legal-entity identity data schemas",
+      "pack": "wealth-onboarding",
+      "tier": "engine",
+      "engines": [
+        "validateSecurityIdentifier"
+      ],
+      "note": "LEI format and ISO 7064 check validation."
+    },
+    {
+      "id": "S017",
+      "section": "S",
+      "name": "FISN / ISO 18774",
+      "url": "https://www.anna-web.org/standards/fisn-iso-18774/",
+      "capability": "Financial-instrument short names",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Short-name standard; not implemented."
+    },
+    {
+      "id": "S018",
+      "section": "S",
+      "name": "Entity Legal Forms / ISO 20275",
+      "url": "https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list",
+      "capability": "Legal-form classification",
+      "pack": "wealth-onboarding",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Legal-form codes; not implemented."
+    },
+    {
+      "id": "S019",
+      "section": "S",
+      "name": "OpenFIGI API specification",
+      "url": "https://www.openfigi.com/api/documentation",
+      "capability": "Instrument-identifier mapping API contract",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "validateSecurityIdentifier"
+      ],
+      "note": "FIGI check digit; no OpenFIGI mapping calls."
+    },
+    {
+      "id": "S020",
+      "section": "S",
+      "name": "Financial Industry Business Ontology",
+      "url": "https://spec.edmcouncil.org/fibo/",
+      "capability": "Financial business concepts and semantic relationships",
+      "pack": "wealth-research",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Ontology; not implemented."
+    },
+    {
+      "id": "S021",
+      "section": "S",
+      "name": "XBRL 2.1 specification",
+      "url": "https://specifications.xbrl.org/work-product-index-group-base-spec-base-spec.html",
+      "capability": "Business reporting representation",
+      "pack": "wealth-research",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "Reads SEC JSON derived from XBRL, not XBRL instance documents."
+    },
+    {
+      "id": "S022",
+      "section": "S",
+      "name": "Inline XBRL 1.1 specification",
+      "url": "https://specifications.xbrl.org/work-product-index-inline-xbrl-inline-xbrl-1.1.html",
+      "capability": "Structured financial data embedded in HTML",
+      "pack": "wealth-research",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "Reads SEC JSON derived from XBRL, not XBRL instance documents."
+    },
+    {
+      "id": "S023",
+      "section": "S",
+      "name": "FASB US GAAP taxonomy",
+      "url": "https://www.fasb.org/page/PageContent?pageId=/standards/accounting-taxonomy.html",
+      "capability": "US financial-reporting taxonomy",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "extractCompanyFact"
+      ],
+      "note": "Reads US GAAP concept values from companyfacts."
+    },
+    {
+      "id": "S024",
+      "section": "S",
+      "name": "SEC standard taxonomies",
+      "url": "https://www.sec.gov/data-research/standard-taxonomies",
+      "capability": "Supported reporting and disclosure taxonomies",
+      "pack": "wealth-research",
+      "tier": "partial-engine",
+      "engines": [
+        "extractCompanyFact",
+        "fetchLiveEdgarCompanyFacts"
+      ],
+      "note": "SEC taxonomy facts through the companyfacts API."
+    },
+    {
+      "id": "S025",
+      "section": "S",
+      "name": "EDGAR Filer Manual",
+      "url": "https://www.sec.gov/submit-filings/filer-support-resources/edgar-filer-manual",
+      "capability": "EDGAR submission and validation requirements",
+      "pack": "wealth-research",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "No EDGAR submission."
+    },
+    {
+      "id": "S026",
+      "section": "S",
+      "name": "Form ADV",
+      "url": "https://www.sec.gov/about/forms/formadv.pdf",
+      "capability": "Investment-adviser disclosures",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Disclosure document; guidance only."
+    },
+    {
+      "id": "S027",
+      "section": "S",
+      "name": "Form CRS instructions",
+      "url": "https://www.sec.gov/about/forms/formcrs.pdf",
+      "capability": "Relationship-summary disclosure instructions",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Disclosure document; guidance only."
+    },
+    {
+      "id": "S028",
+      "section": "S",
+      "name": "Form 13F",
+      "url": "https://www.sec.gov/files/form13f.pdf",
+      "capability": "Institutional investment-manager holdings reporting",
+      "pack": "wealth-fund-ops",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Regulatory filing; not implemented."
+    },
+    {
+      "id": "S029",
+      "section": "S",
+      "name": "Form N-PORT",
+      "url": "https://www.sec.gov/files/formn-port.pdf",
+      "capability": "Registered fund portfolio reporting",
+      "pack": "wealth-fund-ops",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Regulatory filing; not implemented."
+    },
+    {
+      "id": "S030",
+      "section": "S",
+      "name": "Form N-CEN",
+      "url": "https://www.sec.gov/files/formn-cen.pdf",
+      "capability": "Registered investment-company census reporting",
+      "pack": "wealth-fund-ops",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Regulatory filing; not implemented."
+    },
+    {
+      "id": "S031",
+      "section": "S",
+      "name": "FINRA 2111 Suitability",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2111",
+      "capability": "Suitability rule and applicability boundaries",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "checkSuitability"
+      ],
+      "note": "Customer-specific and quantitative suitability; reasonable-basis suitability needs human judgment."
+    },
+    {
+      "id": "S032",
+      "section": "S",
+      "name": "FINRA 2090 Know Your Customer",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2090",
+      "capability": "Essential customer information",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "identifyOnboardingGaps"
+      ],
+      "note": "Flags missing essential-facts and investment-profile items."
+    },
+    {
+      "id": "S033",
+      "section": "S",
+      "name": "FINRA 4512 Customer Account Information",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4512",
+      "capability": "Account records and trusted-contact provisions",
+      "pack": "wealth-onboarding",
+      "tier": "engine",
+      "engines": [
+        "identifyOnboardingGaps"
+      ],
+      "note": "Customer account records and the trusted contact under FINRA 4512."
+    },
+    {
+      "id": "S034",
+      "section": "S",
+      "name": "FINRA 3110 Supervision",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110",
+      "capability": "Supervisory systems and procedures",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Supervisory requirement; guidance only."
+    },
+    {
+      "id": "S035",
+      "section": "S",
+      "name": "FINRA 3120 Supervisory Control System",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120",
+      "capability": "Supervisory testing and control procedures",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Supervisory requirement; guidance only."
+    },
+    {
+      "id": "S036",
+      "section": "S",
+      "name": "FINRA 3130 Annual Certification",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3130",
+      "capability": "Compliance and supervision certification",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Supervisory requirement; guidance only."
+    },
+    {
+      "id": "S037",
+      "section": "S",
+      "name": "FINRA 2210 Communications with the Public",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2210",
+      "capability": "Public communication standards",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "scanFinraRule2210"
+      ],
+      "note": "Pattern screen for promissory language and disclosures; not a principal review."
+    },
+    {
+      "id": "S038",
+      "section": "S",
+      "name": "FINRA 2214 Investment Analysis Tools",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2214",
+      "capability": "Investment-analysis tool communications",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "runMonteCarloCashFlow",
+        "forwardTestSimulation"
+      ],
+      "note": "The projection tools here are investment analysis tools; required disclosures are guidance."
+    },
+    {
+      "id": "S039",
+      "section": "S",
+      "name": "FINRA 2165 Financial Exploitation",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2165",
+      "capability": "Specified-adult financial-exploitation protections",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "identifyOnboardingGaps"
+      ],
+      "note": "Flags the trusted contact for specified adults; no hold workflow."
+    },
+    {
+      "id": "S040",
+      "section": "S",
+      "name": "FINRA 3260 Discretionary Accounts",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3260",
+      "capability": "Discretionary account authorization and review",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Discretionary account requirement; guidance only."
+    },
+    {
+      "id": "S041",
+      "section": "S",
+      "name": "FINRA 5310 Best Execution",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/5310",
+      "capability": "Execution diligence and review",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Trading requirement; not implemented."
+    },
+    {
+      "id": "S042",
+      "section": "S",
+      "name": "FINRA 5320 Customer Orders",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/5320",
+      "capability": "Trading ahead of customer-order restrictions",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Trading requirement; not implemented."
+    },
+    {
+      "id": "S043",
+      "section": "S",
+      "name": "FINRA 4210 Margin Requirements",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210",
+      "capability": "Customer margin framework",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Trading requirement; not implemented."
+    },
+    {
+      "id": "S044",
+      "section": "S",
+      "name": "FINRA 2341 Investment Company Securities",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2341",
+      "capability": "Investment-company distribution rules",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Distribution rule; guidance only."
+    },
+    {
+      "id": "S045",
+      "section": "S",
+      "name": "FINRA 2360 Options",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2360",
+      "capability": "Options account and trading requirements",
+      "pack": "wealth-uhnw",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateCollarStrategy"
+      ],
+      "note": "Collars need options approval; account approval is guidance."
+    },
+    {
+      "id": "S046",
+      "section": "S",
+      "name": "FINRA 3310 AML Compliance Program",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/3310",
+      "capability": "Broker-dealer AML program requirements",
+      "pack": "wealth-onboarding",
+      "tier": "partial-engine",
+      "engines": [
+        "validateCipIdentity",
+        "identifyOnboardingGaps"
+      ],
+      "note": "CIP and beneficial ownership records; no AML monitoring."
+    },
+    {
+      "id": "S047",
+      "section": "S",
+      "name": "FINRA 4370 Business Continuity Plans",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4370",
+      "capability": "Business continuity planning",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Operational requirement; guidance only."
+    },
+    {
+      "id": "S048",
+      "section": "S",
+      "name": "FINRA 2231 Customer Account Statements",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/2231",
+      "capability": "Account-statement requirements",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Operational requirement; guidance only."
+    },
+    {
+      "id": "S049",
+      "section": "S",
+      "name": "FINRA 11870 Customer Account Transfers",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/11870",
+      "capability": "Customer-account transfer rules",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Account transfer rule; ACAT is not implemented."
+    },
+    {
+      "id": "S050",
+      "section": "S",
+      "name": "FINRA 4530 Reporting Requirements",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4530",
+      "capability": "Regulatory event reporting",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Regulatory reporting; guidance only."
+    },
+    {
+      "id": "S051",
+      "section": "S",
+      "name": "Regulation Best Interest adopting release",
+      "url": "https://www.sec.gov/files/rules/final/2019/34-86031.pdf",
+      "capability": "Broker-dealer retail recommendation standard",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "checkSuitability"
+      ],
+      "note": "Care-obligation suitability checks; disclosure and conflict obligations are guidance."
+    },
+    {
+      "id": "S052",
+      "section": "S",
+      "name": "Investment adviser conduct interpretation",
+      "url": "https://www.sec.gov/files/rules/interp/2019/ia-5248.pdf",
+      "capability": "SEC interpretation of adviser fiduciary conduct",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "checkSuitability"
+      ],
+      "note": "Best-interest fit checks; the duty of loyalty is guidance."
+    },
+    {
+      "id": "S053",
+      "section": "S",
+      "name": "Adviser compliance rule 206(4)-7",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-275/section-275.206(4)-7",
+      "capability": "Adviser compliance policies and review",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Compliance program rule; guidance only."
+    },
+    {
+      "id": "S054",
+      "section": "S",
+      "name": "Adviser marketing rule 206(4)-1",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-275/section-275.206(4)-1",
+      "capability": "Investment-adviser advertising requirements",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [
+        "checkPerformanceAdvertisement"
+      ],
+      "note": "Performance provisions of paragraph (d) only; testimonials, endorsements and ratings are not checked."
+    },
+    {
+      "id": "S055",
+      "section": "S",
+      "name": "Adviser custody rule 206(4)-2",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-275/section-275.206(4)-2",
+      "capability": "Custody safeguards for adviser client assets",
+      "pack": "wealth-fund-ops",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Custody safeguards; guidance only."
+    },
+    {
+      "id": "S056",
+      "section": "S",
+      "name": "Adviser books and records rule 204-2",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-275/section-275.204-2",
+      "capability": "Investment-adviser recordkeeping",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "withAuditMetadata"
+      ],
+      "note": "Audit metadata supports but does not satisfy recordkeeping."
+    },
+    {
+      "id": "S057",
+      "section": "S",
+      "name": "Broker-dealer records rule 17a-4",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.17a-4",
+      "capability": "Broker-dealer record preservation",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "withAuditMetadata"
+      ],
+      "note": "Audit metadata supports but does not satisfy recordkeeping."
+    },
+    {
+      "id": "S058",
+      "section": "S",
+      "name": "Market access rule 15c3-5",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.15c3-5",
+      "capability": "Market-access risk-management controls",
+      "pack": "wealth-execution",
+      "tier": "partial-engine",
+      "engines": [
+        "validatePreTradeCompliance"
+      ],
+      "note": "Buying-power and oversell checks; no market-access credit or capital controls."
+    },
+    {
+      "id": "S059",
+      "section": "S",
+      "name": "Settlement rule 15c6-1",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.15c6-1",
+      "capability": "Standard securities settlement-cycle rule",
+      "pack": "wealth-execution",
+      "tier": "engine",
+      "engines": [
+        "calculateSettlementDate"
+      ],
+      "note": "T+1 settlement date calculation."
+    },
+    {
+      "id": "S060",
+      "section": "S",
+      "name": "Regulation S-P",
+      "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-248/subpart-A",
+      "capability": "Financial-information privacy and safeguards",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Privacy rule; guidance only."
+    },
+    {
+      "id": "S061",
+      "section": "S",
+      "name": "IRS Publication 550",
+      "url": "https://www.irs.gov/publications/p550",
+      "capability": "Investment income, expenses and disposition guidance",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "netCapitalGainsAndLosses",
+        "scanTaxLossHarvesting"
+      ],
+      "note": "Gain and loss netting and wash-sale look-back."
+    },
+    {
+      "id": "S062",
+      "section": "S",
+      "name": "IRS Publication 590-A",
+      "url": "https://www.irs.gov/publications/p590a",
+      "capability": "IRA contribution guidance",
+      "pack": "wealth-planning",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Contribution limits are not implemented."
+    },
+    {
+      "id": "S063",
+      "section": "S",
+      "name": "IRS Publication 590-B",
+      "url": "https://www.irs.gov/publications/p590b",
+      "capability": "IRA distribution guidance",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateRMD"
+      ],
+      "note": "Uniform Lifetime Table RMDs; no inherited-IRA or joint-table rules."
+    },
+    {
+      "id": "S064",
+      "section": "S",
+      "name": "IRS Publication 560",
+      "url": "https://www.irs.gov/publications/p560",
+      "capability": "Small-business retirement plans",
+      "pack": "wealth-planning",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Tax guidance; not implemented."
+    },
+    {
+      "id": "S065",
+      "section": "S",
+      "name": "IRS Publication 575",
+      "url": "https://www.irs.gov/publications/p575",
+      "capability": "Pension and annuity income",
+      "pack": "wealth-planning",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Tax guidance; not implemented."
+    },
+    {
+      "id": "S066",
+      "section": "S",
+      "name": "IRS Publication 551",
+      "url": "https://www.irs.gov/publications/p551",
+      "capability": "Asset-basis guidance",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateCostBasis"
+      ],
+      "note": "Purchase-price basis by lot; no gifted, inherited or adjusted basis."
+    },
+    {
+      "id": "S067",
+      "section": "S",
+      "name": "IRS Publication 559",
+      "url": "https://www.irs.gov/publications/p559",
+      "capability": "Survivors, executors and administrators",
+      "pack": "wealth-planning",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Tax guidance; not implemented."
+    },
+    {
+      "id": "S068",
+      "section": "S",
+      "name": "IRS Form 8949 instructions",
+      "url": "https://www.irs.gov/instructions/i8949",
+      "capability": "Capital-asset transaction reporting",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateCostBasis",
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "Holding-period classification and netting; no form output."
+    },
+    {
+      "id": "S069",
+      "section": "S",
+      "name": "IRS Schedule D instructions",
+      "url": "https://www.irs.gov/instructions/i1040sd",
+      "capability": "Capital-gain and loss reporting",
+      "pack": "wealth-planning",
+      "tier": "partial-engine",
+      "engines": [
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "Schedule D netting and carryover; no rate computation."
+    },
+    {
+      "id": "S070",
+      "section": "S",
+      "name": "IRS Form 1099-B instructions",
+      "url": "https://www.irs.gov/instructions/i1099b",
+      "capability": "Broker transaction and basis reporting",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateCostBasis"
+      ],
+      "note": "Lot basis and holding period; no 1099-B reconciliation."
+    },
+    {
+      "id": "S071",
+      "section": "S",
+      "name": "IRC 1091 Wash sales",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1091&num=0&edition=prelim",
+      "capability": "Loss disallowance on specified replacement transactions",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "scanTaxLossHarvesting"
+      ],
+      "note": "Wash-sale look-back across supplied lots only."
+    },
+    {
+      "id": "S072",
+      "section": "S",
+      "name": "IRC 1012 Basis of property",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1012&num=0&edition=prelim",
+      "capability": "Cost-basis statutory foundation",
+      "pack": "wealth-portfolio",
+      "tier": "engine",
+      "engines": [
+        "calculateCostBasis"
+      ],
+      "note": "Cost basis by lot."
+    },
+    {
+      "id": "S073",
+      "section": "S",
+      "name": "IRC 1222 Capital gains and losses",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1222&num=0&edition=prelim",
+      "capability": "Capital-gain and loss classifications",
+      "pack": "wealth-planning",
+      "tier": "engine",
+      "engines": [
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "Short- and long-term classification and netting."
+    },
+    {
+      "id": "S074",
+      "section": "S",
+      "name": "IRC 1211 Capital-loss limitation",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1211&num=0&edition=prelim",
+      "capability": "Limits on capital-loss deductions",
+      "pack": "wealth-planning",
+      "tier": "engine",
+      "engines": [
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "The $3,000 and $1,500 capital-loss limits."
+    },
+    {
+      "id": "S075",
+      "section": "S",
+      "name": "IRC 1212 Capital-loss carryovers",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1212&num=0&edition=prelim",
+      "capability": "Capital-loss carryover rules",
+      "pack": "wealth-planning",
+      "tier": "engine",
+      "engines": [
+        "netCapitalGainsAndLosses"
+      ],
+      "note": "Carryover by character, per the Schedule D worksheet."
+    },
+    {
+      "id": "S076",
+      "section": "S",
+      "name": "IRC 1411 Net investment income tax",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1411&num=0&edition=prelim",
+      "capability": "Net investment income tax framework",
+      "pack": "wealth-planning",
+      "tier": "engine",
+      "engines": [
+        "calculateNetInvestmentIncomeTax"
+      ],
+      "note": "Net investment income tax calculation."
+    },
+    {
+      "id": "S077",
+      "section": "S",
+      "name": "IRC 1092 Straddles",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1092&num=0&edition=prelim",
+      "capability": "Tax treatment of straddle positions",
+      "pack": "wealth-uhnw",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateCollarStrategy"
+      ],
+      "note": "Collars can create straddles; the tax treatment is guidance."
+    },
+    {
+      "id": "S078",
+      "section": "S",
+      "name": "IRC 1259 Constructive sales",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1259&num=0&edition=prelim",
+      "capability": "Constructive-sale treatment",
+      "pack": "wealth-uhnw",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateCollarStrategy"
+      ],
+      "note": "Flags constructive-sale review; no determination."
+    },
+    {
+      "id": "S079",
+      "section": "S",
+      "name": "IRC 1014 Property acquired from a decedent",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1014&num=0&edition=prelim",
+      "capability": "Inherited-property basis framework",
+      "pack": "wealth-planning",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Inherited-basis step-up is not implemented."
+    },
+    {
+      "id": "S080",
+      "section": "S",
+      "name": "IRC 170 Charitable contributions",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section170&num=0&edition=prelim",
+      "capability": "Charitable-contribution deduction framework",
+      "pack": "wealth-uhnw",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Charitable deduction limits are not implemented."
+    },
+    {
+      "id": "S081",
+      "section": "S",
+      "name": "Global Investment Performance Standards",
+      "url": "https://www.gipsstandards.org/standards/",
+      "capability": "Investment-performance presentation standards",
+      "pack": "wealth-portfolio",
+      "tier": "partial-engine",
+      "engines": [
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Time-weighted return; no composite construction."
+    },
+    {
+      "id": "S082",
+      "section": "S",
+      "name": "CFA Institute Asset Manager Code",
+      "url": "https://www.cfainstitute.org/ethics-standards/codes/asset-manager-code",
+      "capability": "Asset-manager conduct principles",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Conduct code; guidance only."
+    },
+    {
+      "id": "S083",
+      "section": "S",
+      "name": "BCBS 239",
+      "url": "https://www.bis.org/publ/bcbs239.htm",
+      "capability": "Risk-data aggregation and reporting principles",
+      "pack": "wealth-portfolio",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Risk-data principles; guidance only."
+    },
+    {
+      "id": "S084",
+      "section": "S",
+      "name": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "capability": "AI-risk governance framework",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S085",
+      "section": "S",
+      "name": "NIST Generative AI Profile",
+      "url": "https://doi.org/10.6028/NIST.AI.600-1",
+      "capability": "Generative-AI risk considerations",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S086",
+      "section": "S",
+      "name": "NIST Cybersecurity Framework 2.0",
+      "url": "https://doi.org/10.6028/NIST.CSWP.29",
+      "capability": "Cybersecurity outcomes and risk management",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S087",
+      "section": "S",
+      "name": "NIST SP 800-53 Rev. 5",
+      "url": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "capability": "Security and privacy control catalog",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S088",
+      "section": "S",
+      "name": "NIST SP 800-207",
+      "url": "https://doi.org/10.6028/NIST.SP.800-207",
+      "capability": "Zero-trust architecture guidance",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S089",
+      "section": "S",
+      "name": "OAuth 2.0 RFC 6749",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749",
+      "capability": "Delegated authorization protocol",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S090",
+      "section": "S",
+      "name": "OpenID Connect Core 1.0",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "capability": "Identity claims and authentication protocol",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S091",
+      "section": "S",
+      "name": "Model Context Protocol specification",
+      "url": "https://modelcontextprotocol.io/specification/",
+      "capability": "Agent-to-tool message and authorization contracts",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [],
+      "implementation": [
+        "mcp-servers/lib/stdio-server.js"
+      ],
+      "note": "stdio JSON-RPC server with tools/list and tools/call; no resources, prompts or HTTP transport."
+    },
+    {
+      "id": "S092",
+      "section": "S",
+      "name": "Agent2Agent protocol",
+      "url": "https://a2a-protocol.org/latest/specification/",
+      "capability": "Agent collaboration and task interfaces",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S093",
+      "section": "S",
+      "name": "OpenAPI specification",
+      "url": "https://spec.openapis.org/oas/latest.html",
+      "capability": "Machine-readable API contracts",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S094",
+      "section": "S",
+      "name": "JSON Schema 2020-12",
+      "url": "https://json-schema.org/draft/2020-12",
+      "capability": "Structured input and output validation",
+      "pack": "wealth-compliance",
+      "tier": "partial-engine",
+      "engines": [],
+      "implementation": [
+        "mcp-servers/lib/stdio-server.js"
+      ],
+      "note": "Tool input schemas are published and validated for required fields, types and enums; not full JSON Schema."
+    },
+    {
+      "id": "S095",
+      "section": "S",
+      "name": "CloudEvents specification",
+      "url": "https://github.com/cloudevents/spec",
+      "capability": "Event metadata interoperability",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S096",
+      "section": "S",
+      "name": "OpenTelemetry specification",
+      "url": "https://opentelemetry.io/docs/specs/otel/",
+      "capability": "Telemetry and tracing interfaces",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Governance, security or interface standard for agents using the packs; guidance only."
+    },
+    {
+      "id": "S097",
+      "section": "S",
+      "name": "W3C PROV-O",
+      "url": "https://www.w3.org/TR/prov-o/",
+      "capability": "Provenance representation",
+      "pack": "wealth-compliance",
+      "tier": "standard-reference",
+      "engines": [],
+      "relatedEngines": [
+        "withAuditMetadata"
+      ],
+      "note": "Audit metadata records provenance informally; not PROV-O."
+    },
+    {
+      "id": "S098",
+      "section": "S",
+      "name": "FINRA CAT technical specifications",
+      "url": "https://www.catnmsplan.com/industry-member/technical-specifications",
+      "capability": "Order-event reporting specifications",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Industry reporting or transfer service; not implemented."
+    },
+    {
+      "id": "S099",
+      "section": "S",
+      "name": "DTCC ACATS",
+      "url": "https://www.dtcc.com/clearing-services/equities-clearing-services/acats",
+      "capability": "Account-transfer service and processing documentation",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Industry reporting or transfer service; not implemented."
+    },
+    {
+      "id": "S100",
+      "section": "S",
+      "name": "DTCC ALERT",
+      "url": "https://www.dtcc.com/institutional-trade-processing/itp/alert",
+      "capability": "Standing settlement-instruction reference service",
+      "pack": "wealth-execution",
+      "tier": "standard-reference",
+      "engines": [],
+      "note": "Industry reporting or transfer service; not implemented."
+    },
+    {
+      "id": "G001",
+      "section": "G",
+      "name": "PyPortfolioOpt",
+      "url": "https://github.com/PyPortfolio/PyPortfolioOpt",
+      "capability": "Efficient-frontier, Black-Litterman and hierarchical allocation",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G002",
+      "section": "G",
+      "name": "Riskfolio-Lib",
+      "url": "https://github.com/dcajasn/Riskfolio-Lib",
+      "capability": "Portfolio optimization across risk measures",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G003",
+      "section": "G",
+      "name": "cvxportfolio",
+      "url": "https://github.com/cvxgrp/cvxportfolio",
+      "capability": "Convex portfolio optimization with trading costs",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G004",
+      "section": "G",
+      "name": "skfolio",
+      "url": "https://github.com/skfolio/skfolio",
+      "capability": "Portfolio optimization with estimator-style workflows",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G005",
+      "section": "G",
+      "name": "CVXPY",
+      "url": "https://github.com/cvxpy/cvxpy",
+      "capability": "Convex modeling for custom allocation constraints",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G006",
+      "section": "G",
+      "name": "PortfolioAnalytics",
+      "url": "https://github.com/braverock/PortfolioAnalytics",
+      "capability": "R portfolio optimization and constraint modeling",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G007",
+      "section": "G",
+      "name": "RiskPortfolios",
+      "url": "https://github.com/ArdiaD/RiskPortfolios",
+      "capability": "Risk-based portfolio allocation in R",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional optimization library; the packs do not optimize."
+    },
+    {
+      "id": "G008",
+      "section": "G",
+      "name": "GS Quant",
+      "url": "https://github.com/goldmansachs/gs-quant",
+      "capability": "Quantitative finance analytics and data clients",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional quantitative or risk analytics library."
+    },
+    {
+      "id": "G009",
+      "section": "G",
+      "name": "DeepDow",
+      "url": "https://github.com/jankrepl/deepdow",
+      "capability": "Deep-learning portfolio allocation",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Deep-learning allocation research code."
+    },
+    {
+      "id": "G010",
+      "section": "G",
+      "name": "TensorFlow Quant Finance",
+      "url": "https://github.com/google/tf-quant-finance",
+      "capability": "TensorFlow numerical-finance library",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional quantitative or risk analytics library."
+    },
+    {
+      "id": "G011",
+      "section": "G",
+      "name": "QuantLib",
+      "url": "https://github.com/lballabio/QuantLib",
+      "capability": "Derivatives valuation and term structures",
+      "pack": "wealth-uhnw",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateCollarStrategy"
+      ],
+      "note": "Option pricing source for collar premiums, which the engine does not price."
+    },
+    {
+      "id": "G012",
+      "section": "G",
+      "name": "OpenGamma Strata",
+      "url": "https://github.com/OpenGamma/Strata",
+      "capability": "Market-risk and derivatives analytics",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional quantitative or risk analytics library."
+    },
+    {
+      "id": "G013",
+      "section": "G",
+      "name": "Open Source Risk Engine",
+      "url": "https://github.com/OpenSourceRisk/Engine",
+      "capability": "Portfolio risk and valuation infrastructure",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional quantitative or risk analytics library."
+    },
+    {
+      "id": "G014",
+      "section": "G",
+      "name": "finmath-lib",
+      "url": "https://github.com/finmath/finmath-lib",
+      "capability": "Mathematical finance and simulation",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional quantitative or risk analytics library."
+    },
+    {
+      "id": "G015",
+      "section": "G",
+      "name": "rateslib",
+      "url": "https://github.com/attack68/rateslib",
+      "capability": "Fixed-income curves and instrument analytics",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "analyzePortfolioFactors"
+      ],
+      "note": "Fixed-income curves; duration here comes from supplied values."
+    },
+    {
+      "id": "G016",
+      "section": "G",
+      "name": "FinancePy",
+      "url": "https://github.com/domokane/FinancePy",
+      "capability": "Instrument pricing and financial analytics",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Optional quantitative or risk analytics library."
+    },
+    {
+      "id": "G017",
+      "section": "G",
+      "name": "FinanceHub",
+      "url": "https://github.com/Finance-Hub/FinanceHub",
+      "capability": "Quantitative finance research utilities",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Quantitative research utilities."
+    },
+    {
+      "id": "G018",
+      "section": "G",
+      "name": "vollib",
+      "url": "https://github.com/vollib/vollib",
+      "capability": "Option-pricing and implied-volatility routines",
+      "pack": "wealth-uhnw",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateCollarStrategy"
+      ],
+      "note": "Implied volatility and option prices for collar premiums."
+    },
+    {
+      "id": "G019",
+      "section": "G",
+      "name": "QuantLib-SWIG",
+      "url": "https://github.com/lballabio/QuantLib-SWIG",
+      "capability": "Language bindings for QuantLib",
+      "pack": "wealth-uhnw",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateCollarStrategy"
+      ],
+      "note": "Option pricing source for collar premiums, which the engine does not price."
+    },
+    {
+      "id": "G020",
+      "section": "G",
+      "name": "bond_pricing",
+      "url": "https://github.com/jrvarma/bond_pricing",
+      "capability": "Bond prices, yields and duration",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "analyzePortfolioFactors"
+      ],
+      "note": "Bond duration source for the durationYears input."
+    },
+    {
+      "id": "G021",
+      "section": "G",
+      "name": "LEAN",
+      "url": "https://github.com/QuantConnect/Lean",
+      "capability": "Event-driven research, backtesting and trading",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G022",
+      "section": "G",
+      "name": "NautilusTrader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "capability": "Trading-system simulation and live adapters",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G023",
+      "section": "G",
+      "name": "Backtrader",
+      "url": "https://github.com/mementum/backtrader",
+      "capability": "Python strategy backtesting",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G024",
+      "section": "G",
+      "name": "Zipline Reloaded",
+      "url": "https://github.com/stefan-jansen/zipline-reloaded",
+      "capability": "Event-driven strategy backtesting",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G025",
+      "section": "G",
+      "name": "vectorbt",
+      "url": "https://github.com/polakowo/vectorbt",
+      "capability": "Vectorized strategy exploration",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G026",
+      "section": "G",
+      "name": "backtesting.py",
+      "url": "https://github.com/kernc/backtesting.py",
+      "capability": "Strategy simulation and parameter exploration",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G027",
+      "section": "G",
+      "name": "bt",
+      "url": "https://github.com/pmorissette/bt",
+      "capability": "Portfolio-oriented backtesting",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G028",
+      "section": "G",
+      "name": "QSTrader",
+      "url": "https://github.com/mhallsmoore/qstrader",
+      "capability": "Systematic portfolio backtesting",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G029",
+      "section": "G",
+      "name": "Lumibot",
+      "url": "https://github.com/Lumiwealth/lumibot",
+      "capability": "Strategy backtesting and broker execution",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G030",
+      "section": "G",
+      "name": "RQAlpha",
+      "url": "https://github.com/ricequant/rqalpha",
+      "capability": "Extensible backtesting engine; adapt market conventions",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "backtestPortfolio"
+      ],
+      "note": "Backtesting beyond the four embedded ETFs."
+    },
+    {
+      "id": "G031",
+      "section": "G",
+      "name": "FinGPT",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT",
+      "capability": "Financial language-model research",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G032",
+      "section": "G",
+      "name": "FinRobot",
+      "url": "https://github.com/AI4Finance-Foundation/FinRobot",
+      "capability": "Financial-analysis agent workflows",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G033",
+      "section": "G",
+      "name": "FinRL",
+      "url": "https://github.com/AI4Finance-Foundation/FinRL",
+      "capability": "Reinforcement-learning trading experiments",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G034",
+      "section": "G",
+      "name": "FinRL-Meta",
+      "url": "https://github.com/AI4Finance-Foundation/FinRL-Meta",
+      "capability": "Financial RL environments and data workflows",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G035",
+      "section": "G",
+      "name": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "capability": "Multi-agent investment-analysis research",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G036",
+      "section": "G",
+      "name": "Microsoft Qlib",
+      "url": "https://github.com/microsoft/qlib",
+      "capability": "Quantitative investment research platform",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G037",
+      "section": "G",
+      "name": "Microsoft RD-Agent",
+      "url": "https://github.com/microsoft/RD-Agent",
+      "capability": "Automated research and model-development experiments",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G038",
+      "section": "G",
+      "name": "FinMem",
+      "url": "https://github.com/pipiku915/FinMem-LLM-StockTrading",
+      "capability": "Memory-based financial-agent experiments",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G039",
+      "section": "G",
+      "name": "FinCon",
+      "url": "https://github.com/The-FinAI/FinCon",
+      "capability": "Financial multi-agent decision-making experiments",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial AI and agent research code."
+    },
+    {
+      "id": "G040",
+      "section": "G",
+      "name": "Anthropic financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "capability": "Financial reference agents, skills and connectors",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Reference financial agents and skills compared in the capability audit."
+    },
+    {
+      "id": "G041",
+      "section": "G",
+      "name": "ABIDES",
+      "url": "https://github.com/abides-sim/abides",
+      "capability": "Agent-based market simulation",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Agent-based market simulation."
+    },
+    {
+      "id": "G042",
+      "section": "G",
+      "name": "FinBERT",
+      "url": "https://github.com/ProsusAI/finBERT",
+      "capability": "Financial text sentiment classification",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G043",
+      "section": "G",
+      "name": "FinQA",
+      "url": "https://github.com/czyssrs/FinQA",
+      "capability": "Financial numerical-reasoning benchmark",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G044",
+      "section": "G",
+      "name": "ConvFinQA",
+      "url": "https://github.com/czyssrs/ConvFinQA",
+      "capability": "Conversational financial numerical reasoning",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G045",
+      "section": "G",
+      "name": "TAT-QA",
+      "url": "https://github.com/NExTplusplus/TAT-QA",
+      "capability": "Financial table-and-text reasoning benchmark",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G046",
+      "section": "G",
+      "name": "FinanceBench",
+      "url": "https://github.com/patronus-ai/financebench",
+      "capability": "Financial-document question-answering evaluation",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G047",
+      "section": "G",
+      "name": "FinNLP",
+      "url": "https://github.com/AI4Finance-Foundation/FinNLP",
+      "capability": "Financial NLP data and workflow utilities",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G048",
+      "section": "G",
+      "name": "PIXIU",
+      "url": "https://github.com/The-FinAI/PIXIU",
+      "capability": "Financial language-model tasks and benchmarks",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G049",
+      "section": "G",
+      "name": "FinBen",
+      "url": "https://github.com/The-FinAI/FinBen",
+      "capability": "Financial LLM benchmark suite",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial NLP model or evaluation benchmark."
+    },
+    {
+      "id": "G050",
+      "section": "G",
+      "name": "Alphalens",
+      "url": "https://github.com/quantopian/alphalens",
+      "capability": "Predictive-factor performance analysis",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "analyzePortfolioFactors"
+      ],
+      "note": "Factor performance analysis."
+    },
+    {
+      "id": "G051",
+      "section": "G",
+      "name": "PerformanceAnalytics",
+      "url": "https://github.com/braverock/PerformanceAnalytics",
+      "capability": "R performance and risk analysis",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTimeWeightedReturn",
+        "assessSharpeRatio"
+      ],
+      "note": "Performance and risk statistics."
+    },
+    {
+      "id": "G052",
+      "section": "G",
+      "name": "quantstats",
+      "url": "https://github.com/ranaroussi/quantstats",
+      "capability": "Strategy-performance statistics and reports",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTimeWeightedReturn",
+        "assessSharpeRatio"
+      ],
+      "note": "Performance and risk statistics."
+    },
+    {
+      "id": "G053",
+      "section": "G",
+      "name": "empyrical-reloaded",
+      "url": "https://github.com/stefan-jansen/empyrical-reloaded",
+      "capability": "Common portfolio risk and return metrics",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTimeWeightedReturn",
+        "assessSharpeRatio"
+      ],
+      "note": "Performance and risk statistics."
+    },
+    {
+      "id": "G054",
+      "section": "G",
+      "name": "pyfolio-reloaded",
+      "url": "https://github.com/stefan-jansen/pyfolio-reloaded",
+      "capability": "Portfolio performance tear sheets",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTimeWeightedReturn",
+        "assessSharpeRatio"
+      ],
+      "note": "Performance and risk statistics."
+    },
+    {
+      "id": "G055",
+      "section": "G",
+      "name": "ffn",
+      "url": "https://github.com/pmorissette/ffn",
+      "capability": "Financial performance and portfolio statistics",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTimeWeightedReturn",
+        "assessSharpeRatio"
+      ],
+      "note": "Performance and risk statistics."
+    },
+    {
+      "id": "G056",
+      "section": "G",
+      "name": "quantmod",
+      "url": "https://github.com/joshuaulrich/quantmod",
+      "capability": "R financial data modeling and charting",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial data or econometrics for research."
+    },
+    {
+      "id": "G057",
+      "section": "G",
+      "name": "TTR",
+      "url": "https://github.com/joshuaulrich/TTR",
+      "capability": "R technical trading indicators",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial data or econometrics for research."
+    },
+    {
+      "id": "G058",
+      "section": "G",
+      "name": "arch",
+      "url": "https://github.com/bashtage/arch",
+      "capability": "Volatility modeling and financial econometrics",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculatePortfolioVar"
+      ],
+      "note": "Volatility modelling for the VaR volatility input."
+    },
+    {
+      "id": "G059",
+      "section": "G",
+      "name": "linearmodels",
+      "url": "https://github.com/bashtage/linearmodels",
+      "capability": "Panel and asset-pricing econometrics",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial data or econometrics for research."
+    },
+    {
+      "id": "G060",
+      "section": "G",
+      "name": "statsmodels",
+      "url": "https://github.com/statsmodels/statsmodels",
+      "capability": "Statistical estimation for financial research",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Financial data or econometrics for research."
+    },
+    {
+      "id": "G061",
+      "section": "G",
+      "name": "Portfolio Performance",
+      "url": "https://github.com/portfolio-performance/portfolio",
+      "capability": "Personal portfolio performance measurement",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTimeWeightedReturn"
+      ],
+      "note": "Personal performance tracking."
+    },
+    {
+      "id": "G062",
+      "section": "G",
+      "name": "alpaca-py",
+      "url": "https://github.com/alpacahq/alpaca-py",
+      "capability": "Python client for Alpaca services",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "buildTradePayload"
+      ],
+      "note": "Official client for submitting the Alpaca payloads built here."
+    },
+    {
+      "id": "G063",
+      "section": "G",
+      "name": "Databento Python",
+      "url": "https://github.com/databento/databento-python",
+      "capability": "Python market-data client",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Market or financial data client."
+    },
+    {
+      "id": "G064",
+      "section": "G",
+      "name": "yfinance",
+      "url": "https://github.com/ranaroussi/yfinance",
+      "capability": "Unofficial Yahoo Finance data access",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Unofficial price data; unsuitable for client reporting."
+    },
+    {
+      "id": "G065",
+      "section": "G",
+      "name": "pandas-datareader",
+      "url": "https://github.com/pydata/pandas-datareader",
+      "capability": "Dataset retrieval into pandas",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Market or financial data client."
+    },
+    {
+      "id": "G066",
+      "section": "G",
+      "name": "fredapi",
+      "url": "https://github.com/mortada/fredapi",
+      "capability": "FRED data access",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "fetchLiveFredSeries"
+      ],
+      "note": "FRED client with full series access."
+    },
+    {
+      "id": "G067",
+      "section": "G",
+      "name": "Nasdaq Data Link Python",
+      "url": "https://github.com/Nasdaq/data-link-python",
+      "capability": "Nasdaq Data Link client",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Market or financial data client."
+    },
+    {
+      "id": "G068",
+      "section": "G",
+      "name": "schwab-py",
+      "url": "https://github.com/alexgolec/schwab-py",
+      "capability": "Community Schwab API client",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Community Schwab client."
+    },
+    {
+      "id": "G069",
+      "section": "G",
+      "name": "ib_async",
+      "url": "https://github.com/ib-api-reloaded/ib_async",
+      "capability": "Community Interactive Brokers client",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "buildTradePayload"
+      ],
+      "note": "Community IBKR client for resolving conids and submitting payloads."
+    },
+    {
+      "id": "G070",
+      "section": "G",
+      "name": "OpenBB",
+      "url": "https://github.com/OpenBB-finance/OpenBB",
+      "capability": "Financial-data integration and analytics platform",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Market or financial data client."
+    },
+    {
+      "id": "G071",
+      "section": "G",
+      "name": "FinanceToolkit",
+      "url": "https://github.com/JerBouma/FinanceToolkit",
+      "capability": "Financial ratios and analytics",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "generateCompanyTearSheet"
+      ],
+      "note": "Financial ratio library."
+    },
+    {
+      "id": "G072",
+      "section": "G",
+      "name": "edgartools",
+      "url": "https://github.com/dgunning/edgartools",
+      "capability": "SEC filings retrieval and analysis",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G073",
+      "section": "G",
+      "name": "sec-edgar-downloader",
+      "url": "https://github.com/jadchaar/sec-edgar-downloader",
+      "capability": "Download SEC filing documents",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G074",
+      "section": "G",
+      "name": "sec-parser",
+      "url": "https://github.com/alphanome-ai/sec-parser",
+      "capability": "SEC-document structure extraction",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G075",
+      "section": "G",
+      "name": "sec-cik-mapper",
+      "url": "https://github.com/jadchaar/sec-cik-mapper",
+      "capability": "Issuer identifier mapping",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G076",
+      "section": "G",
+      "name": "Arelle",
+      "url": "https://github.com/Arelle/Arelle",
+      "capability": "XBRL validation and processing",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G077",
+      "section": "G",
+      "name": "py-xbrl",
+      "url": "https://github.com/manusimidt/py-xbrl",
+      "capability": "XBRL and inline-XBRL parsing",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G078",
+      "section": "G",
+      "name": "python-xbrl",
+      "url": "https://github.com/greedo/python-xbrl",
+      "capability": "XBRL parsing utilities",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G079",
+      "section": "G",
+      "name": "OpenEDGAR",
+      "url": "https://github.com/LexPredict/openedgar",
+      "capability": "EDGAR extraction and analysis framework",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G080",
+      "section": "G",
+      "name": "secfsdstools",
+      "url": "https://github.com/HansjoergW/sec-fincancial-statement-data-set",
+      "capability": "SEC financial-statement dataset processing",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "extractCompanyFact"
+      ],
+      "note": "SEC filing retrieval or XBRL processing."
+    },
+    {
+      "id": "G081",
+      "section": "G",
+      "name": "Unstructured",
+      "url": "https://github.com/Unstructured-IO/unstructured",
+      "capability": "Document ingestion component for financial corpora",
+      "pack": "wealth-onboarding",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Document ingestion for KYC documents, which are not parsed here."
+    },
+    {
+      "id": "G082",
+      "section": "G",
+      "name": "Tax-Calculator",
+      "url": "https://github.com/PSLmodels/Tax-Calculator",
+      "capability": "US federal individual income-tax microsimulation",
+      "pack": "wealth-planning",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTaxBracketHeadroom"
+      ],
+      "note": "Full tax modelling beyond bracket headroom."
+    },
+    {
+      "id": "G083",
+      "section": "G",
+      "name": "Tax-Data",
+      "url": "https://github.com/PSLmodels/taxdata",
+      "capability": "Input data preparation for tax microsimulation",
+      "pack": "wealth-planning",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTaxBracketHeadroom"
+      ],
+      "note": "Full tax modelling beyond bracket headroom."
+    },
+    {
+      "id": "G084",
+      "section": "G",
+      "name": "PolicyEngine US",
+      "url": "https://github.com/PolicyEngine/policyengine-us",
+      "capability": "US tax and benefit modeling",
+      "pack": "wealth-planning",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTaxBracketHeadroom"
+      ],
+      "note": "Full tax modelling beyond bracket headroom."
+    },
+    {
+      "id": "G085",
+      "section": "G",
+      "name": "Tax-Brain",
+      "url": "https://github.com/PSLmodels/Tax-Brain",
+      "capability": "Tax-policy analysis workflow",
+      "pack": "wealth-planning",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculateTaxBracketHeadroom"
+      ],
+      "note": "Full tax modelling beyond bracket headroom."
+    },
+    {
+      "id": "G086",
+      "section": "G",
+      "name": "Ghostfolio",
+      "url": "https://github.com/ghostfolio/ghostfolio",
+      "capability": "Personal investment tracking and analysis",
+      "pack": "wealth-portfolio",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Personal investment tracking."
+    },
+    {
+      "id": "G087",
+      "section": "G",
+      "name": "Beancount",
+      "url": "https://github.com/beancount/beancount",
+      "capability": "Plain-text double-entry accounting",
+      "pack": "wealth-fund-ops",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "reconcileLedger"
+      ],
+      "note": "Double-entry accounting source for reconciliation inputs."
+    },
+    {
+      "id": "G088",
+      "section": "G",
+      "name": "Fava",
+      "url": "https://github.com/beancount/fava",
+      "capability": "Beancount account analysis interface",
+      "pack": "wealth-fund-ops",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "reconcileLedger"
+      ],
+      "note": "Double-entry accounting source for reconciliation inputs."
+    },
+    {
+      "id": "G089",
+      "section": "G",
+      "name": "Ledger",
+      "url": "https://github.com/ledger/ledger",
+      "capability": "Double-entry ledger processing",
+      "pack": "wealth-fund-ops",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "reconcileLedger"
+      ],
+      "note": "Double-entry accounting source for reconciliation inputs."
+    },
+    {
+      "id": "G090",
+      "section": "G",
+      "name": "hledger",
+      "url": "https://github.com/simonmichael/hledger",
+      "capability": "Plain-text accounting and reports",
+      "pack": "wealth-fund-ops",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "reconcileLedger"
+      ],
+      "note": "Double-entry accounting source for reconciliation inputs."
+    },
+    {
+      "id": "G091",
+      "section": "G",
+      "name": "GnuCash",
+      "url": "https://github.com/Gnucash/gnucash",
+      "capability": "Personal and small-business accounting",
+      "pack": "wealth-fund-ops",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "reconcileLedger"
+      ],
+      "note": "Double-entry accounting source for reconciliation inputs."
+    },
+    {
+      "id": "G092",
+      "section": "G",
+      "name": "QuickFIX",
+      "url": "https://github.com/quickfix/quickfix",
+      "capability": "FIX messaging engine",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "buildFixOrderPayload"
+      ],
+      "note": "FIX engine with the session layer this library lacks."
+    },
+    {
+      "id": "G093",
+      "section": "G",
+      "name": "QuickFIX/J",
+      "url": "https://github.com/quickfix-j/quickfixj",
+      "capability": "Java FIX engine",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "buildFixOrderPayload"
+      ],
+      "note": "FIX engine with the session layer this library lacks."
+    },
+    {
+      "id": "G094",
+      "section": "G",
+      "name": "QuickFIX/Go",
+      "url": "https://github.com/quickfixgo/quickfix",
+      "capability": "Go FIX engine",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "buildFixOrderPayload"
+      ],
+      "note": "FIX engine with the session layer this library lacks."
+    },
+    {
+      "id": "G095",
+      "section": "G",
+      "name": "FINOS FDC3",
+      "url": "https://github.com/finos/FDC3",
+      "capability": "Desktop interoperability standards and examples",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Interoperability or domain-model reference implementation."
+    },
+    {
+      "id": "G096",
+      "section": "G",
+      "name": "FINOS Common Domain Model",
+      "url": "https://github.com/finos/common-domain-model",
+      "capability": "Financial product and lifecycle representations",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Interoperability or domain-model reference implementation."
+    },
+    {
+      "id": "G097",
+      "section": "G",
+      "name": "FINOS Legend Engine",
+      "url": "https://github.com/finos/legend-engine",
+      "capability": "Model-driven data service execution",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Data modelling or streaming analytics."
+    },
+    {
+      "id": "G098",
+      "section": "G",
+      "name": "FINOS Legend Studio",
+      "url": "https://github.com/finos/legend-studio",
+      "capability": "Collaborative financial-data modeling interface",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Data modelling or streaming analytics."
+    },
+    {
+      "id": "G099",
+      "section": "G",
+      "name": "FINOS Perspective",
+      "url": "https://github.com/finos/perspective",
+      "capability": "Interactive streaming-data analytics",
+      "pack": "wealth-research",
+      "tier": "integration-reference",
+      "engines": [],
+      "note": "Data modelling or streaming analytics."
+    },
+    {
+      "id": "G100",
+      "section": "G",
+      "name": "OpenFIGI examples",
+      "url": "https://github.com/OpenFIGI/api-examples",
+      "capability": "Financial-instrument identifier mapping examples",
+      "pack": "wealth-execution",
+      "tier": "integration-reference",
+      "engines": [],
+      "relatedEngines": [
+        "validateSecurityIdentifier"
+      ],
+      "note": "FIGI mapping examples; this library only validates FIGI check digits."
+    },
+    {
+      "id": "R001",
+      "section": "R",
+      "name": "Portfolio Selection (Markowitz, 1952)",
+      "url": "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+      "capability": "Mean-variance diversification foundation",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "forwardTestSimulation"
+      ],
+      "note": "Portfolio variance as weights-covariance-weights, used by the forward simulation."
+    },
+    {
+      "id": "R002",
+      "section": "R",
+      "name": "Capital Asset Prices (Sharpe, 1964)",
+      "url": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x",
+      "capability": "Equilibrium risk and expected returns",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R003",
+      "section": "R",
+      "name": "Liquidity Preference as Behavior Towards Risk (Tobin, 1958)",
+      "url": "https://doi.org/10.2307/2296205",
+      "capability": "Risky allocation and cash separation",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R004",
+      "section": "R",
+      "name": "Lifetime Portfolio Selection under Uncertainty (Merton, 1969)",
+      "url": "https://doi.org/10.2307/1926560",
+      "capability": "Dynamic consumption and portfolio choice",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R005",
+      "section": "R",
+      "name": "Optimum Consumption and Portfolio Rules (Merton, 1971)",
+      "url": "https://doi.org/10.1016/0022-0531(71)90038-X",
+      "capability": "Continuous-time lifetime allocation",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R006",
+      "section": "R",
+      "name": "Global Portfolio Optimization (Black and Litterman, 1992)",
+      "url": "https://doi.org/10.2469/faj.v48.n5.28",
+      "capability": "Combine equilibrium returns and investor views",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R007",
+      "section": "R",
+      "name": "Optimal Versus Naive Diversification (DeMiguel et al., 2009)",
+      "url": "https://doi.org/10.1093/rfs/hhm075",
+      "capability": "Evaluate estimation error against equal weighting",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R008",
+      "section": "R",
+      "name": "Risk Reduction in Large Portfolios (Jagannathan and Ma, 2003)",
+      "url": "https://doi.org/10.1111/1540-6261.00580",
+      "capability": "Understand constraint-driven risk reduction",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R009",
+      "section": "R",
+      "name": "A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices (Ledoit and Wolf, 2004)",
+      "url": "https://doi.org/10.1016/S0047-259X(03)00096-4",
+      "capability": "Covariance shrinkage for portfolio risk",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R010",
+      "section": "R",
+      "name": "Building Diversified Portfolios that Outperform Out of Sample (Lopez de Prado, 2016)",
+      "url": "https://doi.org/10.3905/jpm.2016.42.4.059",
+      "capability": "Hierarchical portfolio construction research",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Portfolio construction research; no optimizer."
+    },
+    {
+      "id": "R011",
+      "section": "R",
+      "name": "Common Risk Factors in the Returns on Stocks and Bonds (Fama and French, 1993)",
+      "url": "https://doi.org/10.1016/0304-405X(93)90023-5",
+      "capability": "Equity and bond factor modeling",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "analyzePortfolioFactors"
+      ],
+      "note": "Factor model research; exposures here come from supplied scores."
+    },
+    {
+      "id": "R012",
+      "section": "R",
+      "name": "A Five-Factor Asset Pricing Model (Fama and French, 2015)",
+      "url": "https://doi.org/10.1016/j.jfineco.2014.10.010",
+      "capability": "Profitability and investment factors",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "analyzePortfolioFactors"
+      ],
+      "note": "Factor model research; exposures here come from supplied scores."
+    },
+    {
+      "id": "R013",
+      "section": "R",
+      "name": "On Persistence in Mutual Fund Performance (Carhart, 1997)",
+      "url": "https://doi.org/10.1111/j.1540-6261.1997.tb03808.x",
+      "capability": "Performance persistence and factor adjustment",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R014",
+      "section": "R",
+      "name": "Returns to Buying Winners and Selling Losers (Jegadeesh and Titman, 1993)",
+      "url": "https://doi.org/10.1111/j.1540-6261.1993.tb04702.x",
+      "capability": "Cross-sectional momentum evidence",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R015",
+      "section": "R",
+      "name": "The Other Side of Value (Novy-Marx, 2013)",
+      "url": "https://doi.org/10.1016/j.jfineco.2013.01.003",
+      "capability": "Profitability and stock returns",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R016",
+      "section": "R",
+      "name": "Value and Momentum Everywhere (Asness et al., 2013)",
+      "url": "https://doi.org/10.1111/jofi.12021",
+      "capability": "Cross-asset value and momentum research",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R017",
+      "section": "R",
+      "name": "Betting Against Beta (Frazzini and Pedersen, 2014)",
+      "url": "https://doi.org/10.1016/j.jfineco.2013.10.005",
+      "capability": "Leverage constraints and low-beta investing",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R018",
+      "section": "R",
+      "name": "Time Series Momentum (Moskowitz et al., 2012)",
+      "url": "https://doi.org/10.1016/j.jfineco.2011.11.003",
+      "capability": "Trend-following evidence across assets",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R019",
+      "section": "R",
+      "name": "Digesting Anomalies (Hou et al., 2015)",
+      "url": "https://doi.org/10.1093/rfs/hhu068",
+      "capability": "Investment-based factor explanation",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R020",
+      "section": "R",
+      "name": "... and the Cross-Section of Expected Returns (Harvey et al., 2016)",
+      "url": "https://doi.org/10.1093/rfs/hhv059",
+      "capability": "Multiple-testing concerns in factor discovery",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Factor and anomaly research."
+    },
+    {
+      "id": "R021",
+      "section": "R",
+      "name": "Coherent Measures of Risk (Artzner et al., 1999)",
+      "url": "https://doi.org/10.1111/1467-9965.00068",
+      "capability": "Axioms for portfolio risk measures",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculatePortfolioVar"
+      ],
+      "note": "Expected shortfall is a coherent risk measure; VaR is not."
+    },
+    {
+      "id": "R022",
+      "section": "R",
+      "name": "Optimization of Conditional Value-at-Risk (Rockafellar and Uryasev, 2000)",
+      "url": "https://doi.org/10.21314/JOR.2000.038",
+      "capability": "Tail-risk optimization",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "calculatePortfolioVar"
+      ],
+      "note": "CVaR is computed, not optimized."
+    },
+    {
+      "id": "R023",
+      "section": "R",
+      "name": "Autoregressive Conditional Heteroscedasticity (Engle, 1982)",
+      "url": "https://doi.org/10.2307/1912773",
+      "capability": "Time-varying conditional volatility",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Conditional volatility models; VaR here takes a supplied volatility."
+    },
+    {
+      "id": "R024",
+      "section": "R",
+      "name": "Generalized Autoregressive Conditional Heteroskedasticity (Bollerslev, 1986)",
+      "url": "https://doi.org/10.1016/0304-4076(86)90063-1",
+      "capability": "GARCH volatility dynamics",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Conditional volatility models; VaR here takes a supplied volatility."
+    },
+    {
+      "id": "R025",
+      "section": "R",
+      "name": "Optimal Execution of Portfolio Transactions (Almgren and Chriss, 2001)",
+      "url": "https://doi.org/10.21314/JOR.2001.041",
+      "capability": "Execution cost and timing-risk tradeoff",
+      "pack": "wealth-execution",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Execution-cost and market microstructure research; no execution algorithms."
+    },
+    {
+      "id": "R026",
+      "section": "R",
+      "name": "Continuous Auctions and Insider Trading (Kyle, 1985)",
+      "url": "https://doi.org/10.2307/1913210",
+      "capability": "Price impact and information in trading",
+      "pack": "wealth-execution",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Execution-cost and market microstructure research; no execution algorithms."
+    },
+    {
+      "id": "R027",
+      "section": "R",
+      "name": "Bid, Ask and Transaction Prices (Glosten and Milgrom, 1985)",
+      "url": "https://doi.org/10.1016/0304-405X(85)90044-3",
+      "capability": "Adverse selection and bid-ask spreads",
+      "pack": "wealth-execution",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Execution-cost and market microstructure research; no execution algorithms."
+    },
+    {
+      "id": "R028",
+      "section": "R",
+      "name": "Optimal Control of Execution Costs (Bertsimas and Lo, 1998)",
+      "url": "https://doi.org/10.1016/S1386-4181(97)00012-8",
+      "capability": "Dynamic execution-cost optimization",
+      "pack": "wealth-execution",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Execution-cost and market microstructure research; no execution algorithms."
+    },
+    {
+      "id": "R029",
+      "section": "R",
+      "name": "Optimal Trading Strategy and Supply/Demand Dynamics (Obizhaeva and Wang, 2013)",
+      "url": "https://doi.org/10.1016/j.finmar.2012.09.001",
+      "capability": "Liquidity resilience and execution",
+      "pack": "wealth-execution",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Execution-cost and market microstructure research; no execution algorithms."
+    },
+    {
+      "id": "R030",
+      "section": "R",
+      "name": "No-Dynamic-Arbitrage and Market Impact (Gatheral, 2010)",
+      "url": "https://doi.org/10.1080/14697680903373692",
+      "capability": "Constraints on market-impact models",
+      "pack": "wealth-execution",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Execution-cost and market microstructure research; no execution algorithms."
+    },
+    {
+      "id": "R031",
+      "section": "R",
+      "name": "Household Finance (Campbell, 2006)",
+      "url": "https://doi.org/10.1111/j.1540-6261.2006.00883.x",
+      "capability": "Household financial decisions and frictions",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R032",
+      "section": "R",
+      "name": "Trusting the Stock Market (Guiso et al., 2008)",
+      "url": "https://doi.org/10.1111/j.1540-6261.2008.01408.x",
+      "capability": "Trust and stock-market participation",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R033",
+      "section": "R",
+      "name": "The Economic Importance of Financial Literacy (Lusardi and Mitchell, 2014)",
+      "url": "https://doi.org/10.1257/jel.52.1.5",
+      "capability": "Financial literacy and household outcomes",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R034",
+      "section": "R",
+      "name": "Trading Is Hazardous to Your Wealth (Barber and Odean, 2000)",
+      "url": "https://doi.org/10.1111/0022-1082.00226",
+      "capability": "Household trading activity and investment results",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R035",
+      "section": "R",
+      "name": "Do Investors Trade Too Much? (Odean, 1999)",
+      "url": "https://doi.org/10.1257/aer.89.5.1279",
+      "capability": "Investor trading behavior and overconfidence",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R036",
+      "section": "R",
+      "name": "The Disposition to Sell Winners Too Early and Ride Losers Too Long (Shefrin and Statman, 1985)",
+      "url": "https://doi.org/10.1111/j.1540-6261.1985.tb05002.x",
+      "capability": "Behavioral explanation of realization decisions",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R037",
+      "section": "R",
+      "name": "Are Investors Reluctant to Realize Their Losses? (Odean, 1998)",
+      "url": "https://doi.org/10.1111/0022-1082.00072",
+      "capability": "Evidence on the disposition effect",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R038",
+      "section": "R",
+      "name": "Prospect Theory (Kahneman and Tversky, 1979)",
+      "url": "https://doi.org/10.2307/1914185",
+      "capability": "Decisions under risk and reference dependence",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Household finance and investor behavior evidence for advisor conversations."
+    },
+    {
+      "id": "R039",
+      "section": "R",
+      "name": "Mutual Fund Flows and Performance in Rational Markets (Berk and Green, 2004)",
+      "url": "https://doi.org/10.1086/424739",
+      "capability": "Skill, fund flows and capacity",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Evidence on fund manager skill."
+    },
+    {
+      "id": "R040",
+      "section": "R",
+      "name": "Measuring Skill in the Mutual Fund Industry (Berk and van Binsbergen, 2015)",
+      "url": "https://doi.org/10.1016/j.jfineco.2015.05.002",
+      "capability": "Manager value added and skill measurement",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Evidence on fund manager skill."
+    },
+    {
+      "id": "R041",
+      "section": "R",
+      "name": "Tax-Aware Portfolio Construction via Convex Optimization",
+      "url": "https://web.stanford.edu/~boyd/papers/tax_aware_portfolio.html",
+      "capability": "Optimization with tax-sensitive trade decisions",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "scanTaxLossHarvesting"
+      ],
+      "note": "Tax-aware optimization; harvesting here is rule-based."
+    },
+    {
+      "id": "R042",
+      "section": "R",
+      "name": "Multi-Period Trading via Convex Optimization",
+      "url": "https://web.stanford.edu/~boyd/papers/cvx_portfolio.html",
+      "capability": "Receding-horizon portfolio construction",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Multi-period optimization with trading costs; no optimizer."
+    },
+    {
+      "id": "R043",
+      "section": "R",
+      "name": "Portfolio Optimization with Linear and Fixed Transaction Costs",
+      "url": "https://web.stanford.edu/~boyd/papers/portfolio.html",
+      "capability": "Rebalancing with realistic trading constraints",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Multi-period optimization with trading costs; no optimizer."
+    },
+    {
+      "id": "R044",
+      "section": "R",
+      "name": "Uncertain Lifetime, Life Insurance, and the Theory of the Consumer (Yaari, 1965)",
+      "url": "https://doi.org/10.2307/2296058",
+      "capability": "Longevity uncertainty and annuitization",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Longevity and annuitization research."
+    },
+    {
+      "id": "R045",
+      "section": "R",
+      "name": "Annuities and Individual Welfare (Davidoff et al., 2005)",
+      "url": "https://doi.org/10.1257/000282805775014281",
+      "capability": "Annuity value under lifecycle assumptions",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Longevity and annuitization research."
+    },
+    {
+      "id": "R046",
+      "section": "R",
+      "name": "Annuitization and Asset Allocation (Milevsky and Young, 2007)",
+      "url": "https://doi.org/10.1016/j.jedc.2006.11.003",
+      "capability": "Joint retirement allocation and annuitization",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Longevity and annuitization research."
+    },
+    {
+      "id": "R047",
+      "section": "R",
+      "name": "The 4% Rule: At What Price? (Scott et al., 2008 draft)",
+      "url": "https://web.stanford.edu/~wfsharpe/retecon/4percent.pdf",
+      "capability": "Economic cost of retirement withdrawal rules",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "relatedEngines": [
+        "runMonteCarloCashFlow"
+      ],
+      "note": "Withdrawal-rule economics; the Monte Carlo tests a fixed inflation-adjusted draw."
+    },
+    {
+      "id": "R048",
+      "section": "R",
+      "name": "Optimal Consumption and Investment with Capital Gains Taxes (Dammon et al., 2001)",
+      "url": "https://doi.org/10.1093/rfs/14.3.583",
+      "capability": "Lifecycle choices under capital-gains taxes",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Tax-aware lifecycle and asset-location research."
+    },
+    {
+      "id": "R049",
+      "section": "R",
+      "name": "Optimal Asset Location and Allocation with Taxable and Tax-Deferred Investing (Dammon et al., 2004)",
+      "url": "https://doi.org/10.1111/j.1540-6261.2004.00655.x",
+      "capability": "Allocation across taxable and deferred accounts",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Tax-aware lifecycle and asset-location research."
+    },
+    {
+      "id": "R050",
+      "section": "R",
+      "name": "Capital Market Equilibrium with Personal Tax (Constantinides, 1983)",
+      "url": "https://doi.org/10.2307/1912150",
+      "capability": "Tax-sensitive trading and equilibrium research",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Tax-aware lifecycle and asset-location research."
+    },
+    {
+      "id": "R051",
+      "section": "R",
+      "name": "The Statistics of Sharpe Ratios (Lo, 2002)",
+      "url": "https://doi.org/10.2469/faj.v58.n4.2453",
+      "capability": "Uncertainty in risk-adjusted performance",
+      "pack": "wealth-portfolio",
+      "tier": "engine",
+      "engines": [
+        "assessSharpeRatio"
+      ],
+      "note": "Standard error of the Sharpe ratio under independent returns."
+    },
+    {
+      "id": "R052",
+      "section": "R",
+      "name": "A Reality Check for Data Snooping (White, 2000)",
+      "url": "https://doi.org/10.1111/1468-0262.00152",
+      "capability": "Correct for strategy selection bias",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Data-snooping and overfitting tests; not implemented."
+    },
+    {
+      "id": "R053",
+      "section": "R",
+      "name": "A Test for Superior Predictive Ability (Hansen, 2005)",
+      "url": "https://doi.org/10.1198/073500105000000063",
+      "capability": "Compare forecasting models under selection",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Data-snooping and overfitting tests; not implemented."
+    },
+    {
+      "id": "R054",
+      "section": "R",
+      "name": "The Probability of Backtest Overfitting (Bailey et al., 2017)",
+      "url": "https://doi.org/10.21314/JCF.2016.322",
+      "capability": "Assess overfitting from strategy searches",
+      "pack": "wealth-portfolio",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Data-snooping and overfitting tests; not implemented."
+    },
+    {
+      "id": "R055",
+      "section": "R",
+      "name": "The Deflated Sharpe Ratio (Bailey and Lopez de Prado, 2014)",
+      "url": "https://doi.org/10.3905/jpm.2014.40.5.094",
+      "capability": "Adjust for selection bias and non-normal returns",
+      "pack": "wealth-portfolio",
+      "tier": "engine",
+      "engines": [
+        "assessSharpeRatio"
+      ],
+      "note": "Deflated Sharpe ratio for selection across trials."
+    },
+    {
+      "id": "R056",
+      "section": "R",
+      "name": "Empirical Asset Pricing via Machine Learning (Gu et al., 2020)",
+      "url": "https://doi.org/10.1093/rfs/hhaa009",
+      "capability": "Machine learning for expected-return estimation",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Machine learning in asset pricing and management."
+    },
+    {
+      "id": "R057",
+      "section": "R",
+      "name": "Deep Learning in Asset Pricing (Chen et al.)",
+      "url": "https://arxiv.org/abs/1904.00745",
+      "capability": "Neural asset-pricing models",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Machine learning in asset pricing and management."
+    },
+    {
+      "id": "R058",
+      "section": "R",
+      "name": "Deep Hedging (Buehler et al.)",
+      "url": "https://arxiv.org/abs/1802.03042",
+      "capability": "Learn hedging with frictions and constraints",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Machine learning in asset pricing and management."
+    },
+    {
+      "id": "R059",
+      "section": "R",
+      "name": "A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem",
+      "url": "https://arxiv.org/abs/1706.10059",
+      "capability": "Portfolio policy learning",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Machine learning in asset pricing and management."
+    },
+    {
+      "id": "R060",
+      "section": "R",
+      "name": "The Role of Deep Learning in Financial Asset Management: A Systematic Review",
+      "url": "https://arxiv.org/abs/2503.01591",
+      "capability": "Survey financial deep-learning applications",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Machine learning in asset pricing and management."
+    },
+    {
+      "id": "R061",
+      "section": "R",
+      "name": "BloombergGPT: A Large Language Model for Finance",
+      "url": "https://arxiv.org/abs/2303.17564",
+      "capability": "Financial-domain language-model training",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R062",
+      "section": "R",
+      "name": "FinGPT: Open-Source Financial Large Language Models",
+      "url": "https://arxiv.org/abs/2306.06031",
+      "capability": "Open financial language-model methods",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R063",
+      "section": "R",
+      "name": "FinBERT: Financial Sentiment Analysis with Pre-trained Language Models",
+      "url": "https://arxiv.org/abs/1908.10063",
+      "capability": "Financial sentiment modeling",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R064",
+      "section": "R",
+      "name": "FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models",
+      "url": "https://arxiv.org/abs/2405.14767",
+      "capability": "Financial-analysis agent architecture",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R065",
+      "section": "R",
+      "name": "FinRobot: AI Agent for Equity Research and Valuation with Large Language Models",
+      "url": "https://arxiv.org/abs/2411.08804",
+      "capability": "Equity research and valuation workflows",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R066",
+      "section": "R",
+      "name": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "url": "https://arxiv.org/abs/2412.20138",
+      "capability": "Role-based financial-agent research",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R067",
+      "section": "R",
+      "name": "FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design",
+      "url": "https://arxiv.org/abs/2311.13743",
+      "capability": "Memory structures for trading agents",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R068",
+      "section": "R",
+      "name": "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making",
+      "url": "https://arxiv.org/abs/2407.06567",
+      "capability": "Agent coordination and feedback",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R069",
+      "section": "R",
+      "name": "FinRL: A Deep Reinforcement Learning Library for Automated Stock Trading in Quantitative Finance",
+      "url": "https://arxiv.org/abs/2011.09607",
+      "capability": "RL trading framework and environments",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R070",
+      "section": "R",
+      "name": "Qlib: An AI-oriented Quantitative Investment Platform",
+      "url": "https://arxiv.org/abs/2009.11189",
+      "capability": "End-to-end quantitative research tooling",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R071",
+      "section": "R",
+      "name": "FinQA: A Dataset of Numerical Reasoning over Financial Data",
+      "url": "https://arxiv.org/abs/2109.00122",
+      "capability": "Numerical reasoning over financial reports",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R072",
+      "section": "R",
+      "name": "ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering",
+      "url": "https://arxiv.org/abs/2210.03849",
+      "capability": "Multi-turn financial calculation evaluation",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R073",
+      "section": "R",
+      "name": "TAT-QA: A Question Answering Benchmark on a Hybrid of Tabular and Textual Content in Finance",
+      "url": "https://arxiv.org/abs/2105.07624",
+      "capability": "Reasoning over tables and narrative",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R074",
+      "section": "R",
+      "name": "FinanceBench: A New Benchmark for Financial Question Answering",
+      "url": "https://arxiv.org/abs/2311.11944",
+      "capability": "Evaluate financial-document answering",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R075",
+      "section": "R",
+      "name": "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance",
+      "url": "https://arxiv.org/abs/2306.05443",
+      "capability": "Financial instruction data and evaluation",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R076",
+      "section": "R",
+      "name": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+      "url": "https://arxiv.org/abs/2402.12659",
+      "capability": "Broad financial-task evaluation",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R077",
+      "section": "R",
+      "name": "FinTeam: A Multi-Agent Collaborative Intelligence System for Comprehensive Financial Scenarios",
+      "url": "https://arxiv.org/abs/2507.10448",
+      "capability": "Specialized agents for financial reports",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R078",
+      "section": "R",
+      "name": "R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization",
+      "url": "https://arxiv.org/abs/2505.15155",
+      "capability": "Automated factor and model research",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R079",
+      "section": "R",
+      "name": "FinRL-Meta: A Universe of Near-Real Market Environments for Data-Driven Deep Reinforcement Learning in Quantitative Finance",
+      "url": "https://arxiv.org/abs/2112.06753",
+      "capability": "RL environment and benchmark construction",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R080",
+      "section": "R",
+      "name": "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+      "url": "https://arxiv.org/abs/2304.07619",
+      "capability": "Test headline sentiment and return prediction",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Financial language models, agents and benchmarks."
+    },
+    {
+      "id": "R081",
+      "section": "R",
+      "name": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "capability": "Interleave reasoning and tool calls",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R082",
+      "section": "R",
+      "name": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "url": "https://arxiv.org/abs/2302.04761",
+      "capability": "Learn tool-use behavior",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R083",
+      "section": "R",
+      "name": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "capability": "Ground generation in retrieved sources",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R084",
+      "section": "R",
+      "name": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+      "url": "https://arxiv.org/abs/2308.08155",
+      "capability": "Multi-agent conversation orchestration",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R085",
+      "section": "R",
+      "name": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2303.11366",
+      "capability": "Feedback-based agent improvement",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R086",
+      "section": "R",
+      "name": "Self-Refine: Iterative Refinement with Self-Feedback",
+      "url": "https://arxiv.org/abs/2303.17651",
+      "capability": "Iterative output refinement",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R087",
+      "section": "R",
+      "name": "Lost in the Middle: How Language Models Use Long Contexts",
+      "url": "https://arxiv.org/abs/2307.03172",
+      "capability": "Test sensitivity to evidence position",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R088",
+      "section": "R",
+      "name": "AgentBench: Evaluating LLMs as Agents",
+      "url": "https://arxiv.org/abs/2308.03688",
+      "capability": "Agent capability evaluation",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R089",
+      "section": "R",
+      "name": "GAIA: A Benchmark for General AI Assistants",
+      "url": "https://arxiv.org/abs/2311.12983",
+      "capability": "Multi-step assistant evaluation",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R090",
+      "section": "R",
+      "name": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "url": "https://arxiv.org/abs/2310.01798",
+      "capability": "Limits of unsupported self-correction",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "Agent design and evaluation research."
+    },
+    {
+      "id": "R091",
+      "section": "R",
+      "name": "Changes in US Family Finances from 2019 to 2022 (Federal Reserve)",
+      "url": "https://www.federalreserve.gov/publications/files/scf23.pdf",
+      "capability": "Household wealth, debt and asset ownership",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "US household finance data."
+    },
+    {
+      "id": "R092",
+      "section": "R",
+      "name": "Economic Well-Being of US Households in 2024 (Federal Reserve)",
+      "url": "https://www.federalreserve.gov/publications/2025-economic-well-being-of-us-households-in-2024-executive-summary.htm",
+      "capability": "Household financial resilience and retirement context",
+      "pack": "wealth-planning",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "US household finance data."
+    },
+    {
+      "id": "R093",
+      "section": "R",
+      "name": "2026 Investment Company Fact Book (ICI)",
+      "url": "https://www.icifactbook.org/",
+      "capability": "US fund industry structure and investor data",
+      "pack": "wealth-research",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "US fund industry data."
+    },
+    {
+      "id": "R094",
+      "section": "R",
+      "name": "Artificial Intelligence in the Securities Industry (FINRA, 2020)",
+      "url": "https://www.finra.org/rules-guidance/key-topics/fintech/report/artificial-intelligence-in-the-securities-industry",
+      "capability": "Broker-dealer AI use cases and governance",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    },
+    {
+      "id": "R095",
+      "section": "R",
+      "name": "Artificial Intelligence in Financial Services (US Treasury, 2024)",
+      "url": "https://home.treasury.gov/system/files/136/Artificial-Intelligence-in-Financial-Services.pdf",
+      "capability": "Financial-sector AI adoption and risk themes",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    },
+    {
+      "id": "R096",
+      "section": "R",
+      "name": "Managing Artificial Intelligence-Specific Cybersecurity Risks in the Financial Services Sector (US Treasury, 2024)",
+      "url": "https://home.treasury.gov/system/files/136/Managing-Artificial-Intelligence-Specific-Cybersecurity-Risks-In-The-Financial-Services-Sector.pdf",
+      "capability": "AI and financial-sector cybersecurity",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    },
+    {
+      "id": "R097",
+      "section": "R",
+      "name": "The Financial Stability Implications of Artificial Intelligence (FSB, 2024)",
+      "url": "https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/",
+      "capability": "Systemic implications of financial AI",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    },
+    {
+      "id": "R098",
+      "section": "R",
+      "name": "Artificial Intelligence and Machine Learning in Financial Services (FSB, 2017)",
+      "url": "https://www.fsb.org/2017/11/artificial-intelligence-and-machine-learning-in-financial-service/",
+      "capability": "Financial AI market developments and stability",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    },
+    {
+      "id": "R099",
+      "section": "R",
+      "name": "The Use of Artificial Intelligence and Machine Learning by Market Intermediaries and Asset Managers (IOSCO, 2021)",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD684.pdf",
+      "capability": "Intermediary and asset-manager AI governance",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    },
+    {
+      "id": "R100",
+      "section": "R",
+      "name": "Artificial Intelligence in Asset Management (CFA Institute Research Foundation)",
+      "url": "https://rpc.cfainstitute.org/research/foundation/2020/artificial-intelligence-in-asset-management",
+      "capability": "Asset-management ML methods and adoption",
+      "pack": "wealth-compliance",
+      "tier": "research-reference",
+      "engines": [],
+      "note": "AI governance in financial services."
+    }
+  ]
+}

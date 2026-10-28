@@ -1,0 +1,55 @@
+name: Deploy dashboard to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer push waits rather than cancelling a deploy mid-flight.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      # A dashboard backed by failing engines should not ship.
+      - name: Test
+        run: npm test
+
+      # Publish the dashboard, the engine modules it imports, and the search and answer-engine files
+      # (robots.txt, sitemap.xml, llms.txt), not the whole repository. See bin/build-site.js.
+      - name: Assemble site
+        run: npm run site
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+      # Tell IndexNow search engines (Bing, Yandex, and DuckDuckGo through Bing) that the site changed.
+      # A failed notification must not fail the deploy.
+      - uses: actions/checkout@v7
+      - name: Notify IndexNow
+        continue-on-error: true
+        run: node bin/notify-indexnow.js

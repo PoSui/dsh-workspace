@@ -1,5 +1,6 @@
-# 工具与运行时（不纳入版本管理，每台机器各自安装）
+# 工具与运行时（不进仓库；令牌、临时脚本放这里）
 _tools/
+_tools/gh_push.js
 
 # 备份与临时文件
 *.zip
@@ -10,11 +11,10 @@ _tools/
 ~$*
 
 # DSH 本地产物
-.dsh/
 .dsh-cache/
 _sessions_decoded/
 
-# 一次性脚本（沙箱删不掉，先忽略）
+# 一次性别名脚本（沙箱删不掉，先忽略）
 _swap_final.bat
 启用OneDrive.bat
 
@@ -22,6 +22,10 @@ _swap_final.bat
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# IDE / 临时目录
+.idea/
+.tmp/
 
 # 代码类大文件（如需版本管理请改用 Git LFS）
 node_modules/

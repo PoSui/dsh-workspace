@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- FICTITIOUS records in the SEC IAPD firm compilation schema (IAPDSECBulkFeed.xsd), for tests and
+     documentation only. Real files: https://adviserinfo.sec.gov/compilation -->
+<IAPDFirmSECReport GenOn="2026-09-13">
+  <Firms>
+    <Firm>
+      <Info SECRgnCD="NYRO" FirmCrdNb="900001" SECNb="801-900001" BusNm="EXAMPLE HARBOR ADVISORS LLC" LegalNm="EXAMPLE HARBOR ADVISORS, LLC" UmbrRgstn="N"/>
+      <MainAddr Strt1="1 EXAMPLE PLAZA" City="NEW YORK" State="NY" Cntry="United States" PostlCd="10001"/>
+      <MailingAddr/>
+      <Rgstn FirmType="Registered" St="APPROVED" Dt="2019-03-01"/>
+      <NoticeFiled>
+        <States RgltrCd="NY" St="FILED" Dt="2019-03-01"/>
+        <States RgltrCd="NJ" St="FILED" Dt="2021-06-15"/>
+      </NoticeFiled>
+      <Filing Dt="2026-03-28" FormVrsn="10/2021"/>
+      <FormInfo>
+        <Part1A>
+          <Item1 Q1F5="0" Q1I="Y" Q1M="N" Q1N="N" Q1O="N">
+            <WebAddrs>
+              <WebAddr>HTTPS://WWW.EXAMPLE.COM</WebAddr>
+            </WebAddrs>
+          </Item1>
+          <Item11 Q11="N"/>
+          <Item11A Q11A1="N" Q11A2="N"/>
+          <Item11B Q11B1="N" Q11B2="N"/>
+          <Item11C Q11C1="N" Q11C2="N" Q11C3="N" Q11C4="N" Q11C5="N"/>
+          <Item11D Q11D1="N" Q11D2="N" Q11D3="N" Q11D4="N" Q11D5="N"/>
+          <Item11E Q11E1="N" Q11E2="N" Q11E3="N" Q11E4="N"/>
+          <Item11F Q11F="N"/>
+          <Item11G Q11G="N"/>
+          <Item11H Q11H1A="N" Q11H1B="N" Q11H1C="N" Q11H2="N"/>
+        </Part1A>
+      </FormInfo>
+    </Firm>
+    <Firm>
+      <Info SECRgnCD="SFRO" FirmCrdNb="900002" SECNb="802-900002" BusNm="SAMPLE RIDGE CAPITAL &amp; CO" LegalNm="SAMPLE RIDGE CAPITAL &amp; COMPANY LP" UmbrRgstn="N"/>
+      <MainAddr Strt1="2 SAMPLE WAY" City="SAN FRANCISCO" State="CA" Cntry="United States" PostlCd="94105"/>
+      <MailingAddr/>
+      <Rgstn FirmType="ERA" St="ACTIVE" Dt="2022-01-10"/>
+      <NoticeFiled/>
+      <Filing Dt="2026-04-01" FormVrsn="10/2021"/>
+      <FormInfo>
+        <Part1A>
+          <Item11 Q11="Y"/>
+          <Item11A Q11A1="N" Q11A2="N"/>
+          <Item11C Q11C1="N" Q11C2="N" Q11C3="Y" Q11C4="N" Q11C5="Y"/>
+          <Item11E Q11E1="N" Q11E2="Y" Q11E3="N" Q11E4="N"/>
+        </Part1A>
+      </FormInfo>
+    </Firm>
+    <Firm>
+      <Info SECRgnCD="CHRO" FirmCrdNb="900003" SECNb="801-900003" BusNm="PLACEHOLDER CAPITAL PARTNERS" LegalNm="PLACEHOLDER CAPITAL PARTNERS INC" UmbrRgstn="N"/>
+      <MainAddr Strt1="3 PLACEHOLDER ST" City="CHICAGO" State="IL" Cntry="United States" PostlCd="60601"/>
+      <MailingAddr/>
+      <Rgstn FirmType="Registered" St="APPROVED-120" Dt="2026-08-20"/>
+      <NoticeFiled>
+        <States RgltrCd="IL" St="FILED" Dt="2026-08-20"/>
+      </NoticeFiled>
+      <Filing Dt="2026-08-20" FormVrsn="10/2021"/>
+      <FormInfo>
+        <Part1A>
+          <Item11 Q11="N"/>
+        </Part1A>
+      </FormInfo>
+    </Firm>
+  </Firms>
+</IAPDFirmSECReport>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- FICTITIOUS records in the state IAPD firm compilation schema (IAPDStateBulkFeed.xsd), for tests and
+     documentation only. Real files: https://adviserinfo.sec.gov/compilation -->
+<IAPDFirmStateReport GenOn="2026-09-13">
+  <Firms>
+    <Firm>
+      <Info FirmCrdNb="900101" BusNm="MAIN STREET EXAMPLE PLANNING" LegalNm="MAIN STREET EXAMPLE PLANNING LLC" UmbrRgstn="N"/>
+      <MainAddr Strt1="10 MAIN ST" City="ANN ARBOR" State="MI" Cntry="United States" PostlCd="48104"/>
+      <MailingAddr/>
+      <StateRgstn>
+        <Rgltrs>
+          <Rgltr Cd="MI" St="APPROVED" Dt="2018-01-02"/>
+          <Rgltr Cd="OH" St="TERMINATED" Dt="2024-12-31"/>
+        </Rgltrs>
+      </StateRgstn>
+      <ERA>
+        <Rgltrs/>
+      </ERA>
+      <Filing Dt="2026-03-15" FormVrsn="10/2021"/>
+      <FormInfo>
+        <Part1A>
+          <Item11 Q11="N"/>
+        </Part1A>
+      </FormInfo>
+    </Firm>
+  </Firms>
+</IAPDFirmStateReport>

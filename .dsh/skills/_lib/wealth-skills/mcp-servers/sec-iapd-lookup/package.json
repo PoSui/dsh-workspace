@@ -1,0 +1,10 @@
+{
+  "name": "mcp-sec-iapd-lookup",
+  "version": "0.1.0",
+  "description": "MCP server for investment adviser registration and disclosure lookups in SEC IAPD compilation files downloaded from adviserinfo.sec.gov/compilation. Does not query FINRA BrokerCheck.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

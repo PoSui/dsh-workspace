@@ -1,0 +1,109 @@
+/* Shared styling for the generated pages, matching the dashboard's palette. One small stylesheet,
+   no webfont and no script, so a page is readable the moment it arrives. */
+
+:root {
+  --bg-dark: #0a0d14;
+  --bg-card: rgba(22, 27, 38, 0.7);
+  --border-card: rgba(255, 255, 255, 0.08);
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --accent-gold: #f59e0b;
+  --accent-blue: #3b82f6;
+  --accent-emerald: #10b981;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-main);
+  background: var(--bg-dark);
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.12) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+.skip-link { position: absolute; left: -9999px; top: 0; }
+.skip-link:focus {
+  left: 8px; top: 8px; z-index: 50; padding: 8px 14px; border-radius: 8px;
+  background: var(--bg-card); border: 1px solid var(--border-card); color: var(--text-main); text-decoration: none;
+}
+
+.site-header {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+  max-width: 980px; margin: 0 auto 18px; padding-bottom: 18px; border-bottom: 1px solid var(--border-card);
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; color: var(--text-main); text-decoration: none; }
+.brand-logo {
+  display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px;
+  background: var(--accent-gold); color: #000; font-weight: 800;
+}
+.header-nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; }
+.header-nav a { color: var(--text-muted); text-decoration: none; }
+.header-nav a:hover, .header-nav a:focus { color: var(--text-main); }
+
+.breadcrumbs { max-width: 980px; margin: 0 auto 20px; font-size: 13px; color: var(--text-muted); }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs .sep { opacity: 0.5; margin: 0 4px; }
+
+main { max-width: 980px; margin: 0 auto; }
+
+h1 { font-family: 'Outfit', system-ui, sans-serif; font-size: 30px; line-height: 1.25; margin: 0 0 14px; }
+h2 { font-family: 'Outfit', system-ui, sans-serif; font-size: 21px; margin: 0 0 12px; scroll-margin-top: 16px; }
+h3 { font-size: 16px; margin: 22px 0 8px; scroll-margin-top: 16px; }
+h2 a, h3 a { color: inherit; text-decoration: none; }
+
+.lead { font-size: 16px; color: var(--text-muted); max-width: 70ch; }
+p { max-width: 75ch; }
+a { color: var(--accent-blue); }
+.muted { color: var(--text-muted); }
+
+.block {
+  margin: 26px 0; padding: 20px 22px; border: 1px solid var(--border-card); border-radius: 14px;
+  background: var(--bg-card);
+}
+.card { padding: 14px 0; border-bottom: 1px solid var(--border-card); }
+.card:last-child { border-bottom: 0; }
+.card h3 { margin-top: 0; }
+
+ul, dl { max-width: 75ch; }
+li { margin-bottom: 6px; }
+dt { margin-top: 10px; }
+dd { margin: 2px 0 0 0; color: var(--text-muted); }
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border-card); vertical-align: top; }
+th { color: var(--text-muted); font-weight: 600; white-space: nowrap; }
+td .muted { display: block; font-size: 13px; }
+
+code { font-family: 'SF Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 0.92em; color: var(--accent-emerald); }
+pre {
+  overflow-x: auto; padding: 14px 16px; border: 1px solid var(--border-card); border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+}
+pre code { color: var(--text-main); }
+
+.tier {
+  display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; white-space: nowrap;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-card); color: var(--text-muted);
+}
+
+details { padding: 12px 16px; margin-bottom: 10px; border: 1px solid var(--border-card); border-radius: 12px; background: rgba(255, 255, 255, 0.02); }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 10px 0 0; }
+
+.site-footer {
+  max-width: 980px; margin: 36px auto 0; padding-top: 18px; border-top: 1px solid var(--border-card);
+  color: var(--text-muted); font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  body { padding: 16px; }
+  h1 { font-size: 24px; }
+  .block { padding: 16px; }
+}

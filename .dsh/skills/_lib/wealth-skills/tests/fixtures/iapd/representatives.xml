@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FICTITIOUS records in the IAPD investment adviser representative compilation schema
+     (IAPDIndividualBulkFeed.xsd), for tests and documentation only. Real files: https://adviserinfo.sec.gov/compilation -->
+<IAPDIndividualReport GenOn="2026-09-13">
+  <Indvls>
+    <Indvl>
+      <Info lastNm="EXAMPLE" firstNm="ALEX" midNm="Q" indvlPK="9000001" actvAGReg="Y" link="http://www.adviserinfo.sec.gov/IAPD/Individual/9000001"/>
+      <OthrNms/>
+      <CrntEmps>
+        <CrntEmp orgNm="EXAMPLE HARBOR ADVISORS LLC" orgPK="900001" city="NEW YORK" state="NY" cntry="United States">
+          <CrntRgstns>
+            <CrntRgstn regAuth="NY" regCat="RA" st="APPROVED" stDt="2019-03-05"/>
+            <CrntRgstn regAuth="NJ" regCat="RA" st="APPROVED" stDt="2021-06-20"/>
+          </CrntRgstns>
+          <BrnchOfLocs>
+            <BrnchOfLoc city="NEW YORK" state="NY"/>
+          </BrnchOfLocs>
+        </CrntEmp>
+      </CrntEmps>
+      <Exms>
+        <Exm exmCd="S65" exmNm="Uniform Investment Adviser Law Examination" exmDt="2019-01-14"/>
+      </Exms>
+      <Dsgntns>
+        <Dsgntn dsgntnNm="CERTIFIED FINANCIAL PLANNER"/>
+      </Dsgntns>
+      <PrevRgstns/>
+      <EmpHss/>
+      <OthrBuss/>
+      <DRPs/>
+    </Indvl>
+    <Indvl>
+      <Info lastNm="SAMPLE" firstNm="JORDAN" indvlPK="9000002" actvAGReg="N" link="http://www.adviserinfo.sec.gov/IAPD/Individual/9000002"/>
+      <OthrNms>
+        <OthrNm lastNm="SAMPLE-TEST" firstNm="JORDAN"/>
+      </OthrNms>
+      <CrntEmps>
+        <CrntEmp orgNm="SAMPLE RIDGE CAPITAL &amp; CO" orgPK="900002" city="SAN FRANCISCO" state="CA" cntry="United States">
+          <CrntRgstns>
+            <CrntRgstn regAuth="CA" regCat="RA" st="CE_INACTIVE" stDt="2026-01-01"/>
+          </CrntRgstns>
+        </CrntEmp>
+      </CrntEmps>
+      <Exms>
+        <Exm exmCd="S66" exmNm="Uniform Combined State Law Examination" exmDt="2015-05-01"/>
+      </Exms>
+      <Dsgntns/>
+      <PrevRgstns>
+        <PrevRgstn orgNm="PLACEHOLDER CAPITAL PARTNERS" orgPK="900003" regBeginDt="2015-06-01" regEndDt="2021-12-31"/>
+      </PrevRgstns>
+      <DRPs>
+        <DRP hasRegAction="N" hasCriminal="N" hasBankrupt="N" hasCivilJudc="N" hasBond="N" hasJudgment="N" hasInvstgn="N" hasCustComp="Y" hasTermination="Y"/>
+      </DRPs>
+    </Indvl>
+  </Indvls>
+</IAPDIndividualReport>
