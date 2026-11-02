@@ -61,3 +61,7 @@
 - **先给方案，再动手（2026-11-01 再次批评"先做后说"）**：任何超出普通文件编辑的改动（系统级、工作区外、安装/卸载、改启动项或注册表），先说明「做什么、动哪里、怎么回滚」，用户同意后才执行。详见 `交接说明.md` 第三节。
 - **不要每次改完文件就往 git 推**。改动先攒在本地，**一天工作结束再统一提交+推送一次**；中间只在用户明确说"推一下"时才推。
 - 推送命令（办公室机实测）：`git -c http.proxy=http://127.0.0.1:4780 -c https.proxy=http://127.0.0.1:4780 -c http.sslBackend=schannel push <带 token 的 URL> HEAD:main`
+- **推送两个坑（2026-11-02 实测）**：
+  1. 沙箱 `workspace-write` 下 git push 报 `cannot create standard input pipe for remote-https: Permission denied` → 必须以 `danger-full-access` 跑；
+  2. `http.sslBackend=openssl` 会读 `C:/Users/破碎/...ca-bundle.crt`，路径乱码导致 `error adding trust anchors` → 必须用 `schannel`（Windows 系统证书库）。
+- 推之前先 `git status`：工作区干净时 `git push` 只返回 `Everything up-to-date`，没东西可推是正常结果。
