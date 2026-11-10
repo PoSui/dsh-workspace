@@ -39,3 +39,7 @@ target/
 
 # 本地一次性探针/凭据脚本（含数据库口令，禁止入库）
 _probe/
+
+# 本机自动同步状态/日志（不入库）
+scripts/portal/sync_auto_state.json
+scripts/portal/logs/
